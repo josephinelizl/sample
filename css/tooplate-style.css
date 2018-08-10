@@ -11,8 +11,28 @@ body {
 	font-size: 19px;
 	font-weight: 300;
 	overflow-x: hidden;
+    height: 100%;
 }
+.parallax1 {
+    background-image: url('../img/1234.jpg');
+    min-height: 10vh; 
 
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.parallax2 {
+    background-image: url('../img/party.jpg');
+    min-height: 40vh; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 .row:after{
     content: "";
     display: table;
@@ -34,6 +54,7 @@ a:focus {
 }
 .parallax-window {
 	min-height: 100vh;
+    width: 100%;
 	background: transparent;
 	
 }
@@ -285,9 +306,6 @@ h5 {
     min-height: 100vh;   
 }
 
-.navbar navbar-transparent{
-    background-color: pink;
-}
 .navbar-toggler.ml-1{
     border: 2px solid white;
 }
@@ -298,16 +316,25 @@ h5 {
     color:white 
 }
 .nav-item > .nav-link{
-    color: white;
-    
+    color: white;  
+}
+
+.navbar{
+    width: 100%;
+    position: fixed;
+    font-family: Poppins;
+    font-size: 1.2em;
 }
 
 .try{
-    background-color: pink;
-    position: fixed;
-    width: 100%;
+  width: 100%;
+  background-color: black;
+  -webkit-transition: : all .5s;
+  -moz-transition: all .5s;
+  -ms-transition: all .5s;
+  -o-transition: all .5s;
+  transition:  all .5s;
 }
-
 #brand:hover{
     text-decoration: none;
     background-color: transparent;
@@ -329,7 +356,7 @@ h5 {
 
 
 .aboutcontainer{
-    padding-top: 4em;
+    font-family: Poppins;
 }
 .lowercontainer{
      height: 25em;
@@ -565,6 +592,7 @@ h5 {
     width: 100%;
 }
 .footer {
+    font-family: Poppins;
 	background-color: black;
     height: auto;
     left: 0;
@@ -656,18 +684,23 @@ h5 {
 }
 
 
-.storehours > h5 {
-    color: white;
-    font-size: 1em;
-}
-
 .storehours > h6 {
     color: white;
+    font-size: .8em;
 }
 
-.contact > h5 {
+.contact > h6 {
     color: white;
-    font-size: 1em;
+    font-size: .8em;
+}
+
+.contact > h6 > a {
+    color: white;
+}
+
+.contact > h6 > a:hover{
+    text-decoration: none;
+    color: darkgoldenrod;
 }
 
 /* media */
@@ -714,6 +747,9 @@ h5 {
     }
     .bottomsection{
         width: 100%;
+    }
+    .navbar{
+        background-color: black;
     }
   
 }
