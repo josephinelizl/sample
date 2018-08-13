@@ -7,7 +7,7 @@ http://www.tooplate.com/view/2096-individual
 */
 
 body {
-	font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: Poppins;
 	font-size: 19px;
 	font-weight: 300;
 	overflow-x: hidden;
@@ -230,6 +230,7 @@ h5 {
 	font-size: 20px;
 	color: white;
 	opacity: 1;
+	opacity: 1;
 }
 
 .slick-dots {
@@ -274,11 +275,11 @@ h5 {
 	position: relative;
 }
 
-
-.instagram{
-    height: 25em;
+#instagramfeed{
+    padding-top: 4em;
     width: 100%;
 }
+
 .btn-danger {
 	font-size: 1.5rem;
 	margin-top: 20px;
@@ -300,12 +301,11 @@ h5 {
 }
 
 /* navigations */
-.landingpage{
-    background-image: url(../img/coffee.jpg);
-    background-size: cover;
-    min-height: 100vh;   
-}
 
+.navbar-brand.mr-0{
+    color: white;
+    font-size: 40px;
+}
 .navbar-toggler.ml-1{
     border: 2px solid white;
 }
@@ -316,7 +316,11 @@ h5 {
     color:white 
 }
 .nav-item > .nav-link{
-    color: white;  
+    color: white;
+}
+
+.nav-item > .nav-link:hover{
+    color: darkgoldenrod;
 }
 
 .navbar{
@@ -324,6 +328,12 @@ h5 {
     position: fixed;
     font-family: Poppins;
     font-size: 1.2em;
+    z-index: 5;
+    -webkit-transition: : all .3s;
+    -moz-transition: all .3s;
+    -ms-transition: all .3s;
+    -o-transition: all .3s;
+    transition:  all .3s; 
 }
 
 .try{
@@ -333,8 +343,9 @@ h5 {
   -moz-transition: all .5s;
   -ms-transition: all .5s;
   -o-transition: all .5s;
-  transition:  all .5s;
-}
+  transition:  all .5s;      
+} 
+
 #brand:hover{
     text-decoration: none;
     background-color: transparent;
@@ -349,8 +360,13 @@ h5 {
     bottom: 0;
     left: 0;
     right: 0;
+    z-index: 1;
 }
 
+.carousel-inner img {
+    width: 100%;
+   min-height: 100vh;
+}
 
 /* about, play, leagues and party */
 
@@ -360,7 +376,7 @@ h5 {
 }
 .lowercontainer{
      height: 25em;
-     width: 100%;
+     width: auto;
 }
 
 
@@ -584,12 +600,14 @@ h5 {
 /* footer */
 
 .footer1 {
+    font-family: Poppins;
 	background-color: black;
     height: auto;
     position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
+    z-index: 1;
 }
 .footer {
     font-family: Poppins;
@@ -751,7 +769,14 @@ h5 {
     .navbar{
         background-color: black;
     }
-  
+    .surgelogo{
+        width: 80%;
+        height: 60%;
+    }
+    .carousel{
+        padding-top: 5em;
+    }
+ 
 }
 
 @media screen and (max-width: 540px) {
@@ -766,7 +791,8 @@ h5 {
     }
     .surgelogo{
         width: 100%;
-        height: 100%;
+        width: 100%;
+        height: 70%;
     }
     .center-content{
         width: 100%;
