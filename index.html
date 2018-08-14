@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Individual HTML Parallax Template</title>
+  <title>Surge | Coffe and Billiards</title>
 <!--
 
 Template 2096 Individual
@@ -17,18 +17,19 @@ http://www.tooplate.com/view/2096-individual
   <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
   <link rel="stylesheet" href="font-awesome-4.5.0/css/font-awesome.min.css">                <!-- Font Awesome -->
   <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
-  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
   <link rel="stylesheet" href="css/tooplate-style.css"><!-- tooplate style -->
-<!--  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">-->
+    
   <!-- Magnific Popup core CSS file -->
   <link rel="stylesheet" href="css/magnific-popup.css">
-
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
-  <style>
-  /* Make the image fully responsive */
+    
+    <script src="js/jquery-1.11.3.min.js"></script>     
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../2096_individual/js/surge.js"></script>
 
-  </style>
   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
         <!--[if lt IE 9]>
@@ -188,17 +189,19 @@ http://www.tooplate.com/view/2096-individual
                </div>
             </div>
           </div>
-       <!--     
-            
+           
+         <div class="parallax1">    
            <div class="menu-content">
             <h1>Menu List</h1>
             <h3>a longer subtitle but still important</h3>
+
                  <ul class="menulist">
-                     <li><a href="#cafe" class="menubutton active btncafe">Cafe</a></li> 
-                   <li><a href="#drinks" class="menubutton btndrinks">Drinks</a></li>
-                   <li><a href="#food" class="menubutton btnfood">Food</a></li> 
+                     <li><button class="menubutton active" onclick="myFunction(1)">Cafe</button></li> 
+                   <li><button class="menubutton" onclick="myFunction(2)">Drinks</button></li>
+                   <li><button class="menubutton" onclick="myFunction(3)">Food</button></li> 
                 </ul>
-               
+
+                
                 <div class="menuitems" id="cafe">
                  <h1>Coffee</h1>
                  <h3>Cafe au Lait</h3>
@@ -213,35 +216,35 @@ http://www.tooplate.com/view/2096-individual
                 </div>
                
                  <div class="menuitems" id="drinks">
-                 <h1>Coffee</h1>
+                 <h1>Brandy</h1>
                  <h3>C2ait</h3>
                  <h3>3fee</h3>
                  <h3>B12ld Brew</h3>
                  <h3>R2e</h3>
             
-                 <h1>Espresso</h1>
+                 <h1>Wine</h1>
                  <h3>L23e</h3>
                  <h3>A12no</h3>
                  <h3>M1to</h3>
                 </div>
                
                 <div class="menuitems" id="food">
-                 <h1>Coffee</h1>
-                 <h3>Cafe au Lait</h3>
-                 <h3>Bottomless Coffee</h3>
-                 <h3>Bottled Cold Brew</h3>
-                 <h3>Red Eye</h3>
+                 <h1>Lunch</h1>
+                 <h3>Casfdsait</h3>
+                 <h3>sfsdffee</h3>
+                 <h3>sfsdf Cold Brew</h3>
+                 <h3>Rsdfe</h3>
             
-                 <h1>Espresso</h1>
-                 <h3>Latte</h3>
-                 <h3>Americano</h3>
-                 <h3>Macchiato</h3>
+                 <h1>Dinner</h1>
+                 <h3>dsf</h3>
+                 <h3>Amesdfdscano</h3>
+                 <h3>Masfdsiato</h3>
                 </div>
           </div>
         </div>
        
 
--->
+
     <div class="parallax1">
         <div id="instagramfeed">
           <!-- LightWidget WIDGET --><!-- LightWidget WIDGET --><script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script><iframe src="http://lightwidget.com/widgets/b932b78057b850d88ea7cf9214223671.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width:100%;border:0;overflow:hidden;"></iframe>
@@ -297,47 +300,6 @@ http://www.tooplate.com/view/2096-individual
                   </div> 
           <!-- end of footer -->
           
-          <!-- load JS files -->
-          <script src="js/jquery-1.11.3.min.js"></script>        <!-- jQuery (https://jquery.com/download/) -->
-<!--          <script src="js/parallax.min.js"></script>-->
-<!--          <script type="text/javascript" src="slick/slick.min.js"></script> -->
-<!--          //<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>-->
-          
-          <!-- Slick Carousel -->
-
-          <!-- Magnific Popup core JS file -->
-          <script src="js/jquery.magnific-popup.min.js"></script>
-          <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<!--          <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>-->
-       
-          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-          <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
-          
-          
-          <script>
-          $(window).scroll(function(){
-              if ($(this).scrollTop() > 10) {
-                  $('.navbar').addClass('try');
-              } else {
-                  $('.navbar').removeClass('try');
-                
-              }
-          });
-              
-          $(window).scroll(function(){
-            if($(window).scrollTop() + $(window).height() > $(document).height() - 120) {
-                 $('.footer1').hide();
-            }else{
-                  $('.footer1').show();
-            }
-             });
          
-             $(document).on('click','#collapsingNavbar2',function(e) {
-                if( $(e.target).is('a') ) {
-                    $(this).collapse('hide');
-                }
-            });
-          </script>
         </body>
         </html>
