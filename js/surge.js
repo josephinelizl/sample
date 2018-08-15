@@ -1,78 +1,121 @@
 /*eslint-env jquery*/
 
-$(window).scroll(function() {
-              if ($(this).scrollTop() > 10) {
-                  $('.navbar').addClass('try');
-              } else {
-                  $('.navbar').removeClass('try');
-                
-              }
- });
-              
+    /* navbar changes color when scrolled down */
     $(window).scroll(function() {
-        if($(window).scrollTop() + $(window).height() > $(document).height() - 120) {
+                  if ($(this).scrollTop() > 10) {
+                      $('.navbar').addClass('try');
+                  } else {
+                      $('.navbar').removeClass('try');
+
+                  }
+     });
+     /* Show bottom footer and hide the static footer when srolled down at the bottom of the page */         
+    $(window).scroll(function() {
+        if($(window).scrollTop() + $(window).height() > $(document).height() - 220) {
                  $('.footer1').hide();
           }else{
                   $('.footer1').show();
           }
     });
-        
+        /* navigation links hide when click */
              $(document).on('click','#collapsingNavbar2',function(e) {
                 if( $(e.target).is('a') ) {
                     $(this).collapse('hide');
                 }
             });
-              
-            function myFunction(a) {
-            var x = document.getElementById("cafe");
-            var y = document.getElementById("drinks");
-            var z = document.getElementById("food");
+
+          /* Menus button */    
+            function changeMenu(a) {
+            var dailyspecials = document.getElementById("dailyspecials");
+            var coffee = document.getElementById("coffee");
+            var drinks= document.getElementById("drinks");
+            var food = document.getElementById("food");
             if( a == 1 ){
-                x.style.display  = "block";
-                y.style.display = "none";
-                z.style.display = "none";
+                dailyspecials.style.display = "block";
+                coffee.style.display  = "none";
+                drinks.style.display = "none";
+                food.style.display = "none";
 
             }
             else if( a == 2 ){
-                x.style.display  = "none";
-                y.style.display = "block";
-                z.style.display = "none";
+                dailyspecials.style.display = "none";
+                coffee.style.display  = "block";
+                drinks.style.display = "none";
+                food.style.display = "none";
             }
+            else if( a == 3 ){
+                dailyspecials.style.display = "none";
+                coffee.style.display  = "none";
+                drinks.style.display = "block";
+                food.style.display = "none";
+            }
+                
               else
               {
-                x.style.display  = "none";
-                y.style.display = "none";
-                z.style.display = "block";
+                dailyspecials.style.display = "none";
+                coffee.style.display  = "none";
+                drinks.style.display = "none";
+                food.style.display = "block";
               }
 
             }
               
+        /* menu button changes active class*/
+
            $(document).ready(function(){
                 $(".menubutton").click(function(){
                   $(".menubutton").removeClass("active");
                   $(this).addClass("active");
                 });
                });
+
+        /* text fadein when scrolled at the view of about,play,leagues and menus sections */
            $(document).ready(function() {
     
-    /* Every time the window is scrolled ... */
-    $(window).scroll( function(){
+            /* Every time the window is scrolled ... */
+            $(window).scroll( function(){
+
+                /* Check the location of each desired element */
+                $('.center-content').each( function(i){
+
+                    var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+                    var bottom_of_window = $(window).scrollTop() + $(window).height();
+
+                    /* If the object is completely visible in the window, fade it */
+                    if( bottom_of_window > bottom_of_object ){
+
+                        $(this).animate({'opacity':'1'},500);
+
+                    }
+
+                }); 
+
+            });
+
+        });
+
+        /* text fadein when scrolled at the view of happy hour section */
+
+           $(document).ready(function() {
     
-        /* Check the location of each desired element */
-        $('.center-content').each( function(i){
-            
-            var bottom_of_object = $(this).offset().top + $(this).outerHeight();
-            var bottom_of_window = $(window).scrollTop() + $(window).height();
-            
-            /* If the object is completely visible in the window, fade it it */
-            if( bottom_of_window > bottom_of_object ){
-                
-                $(this).animate({'opacity':'1'},500);
-                    
-            }
-            
-        }); 
-    
-    });
-    
-});
+            /* Every time the window is scrolled ... */
+            $(window).scroll( function(){
+
+                /* Check the location of each desired element */
+                $('.happyrow').each( function(i){
+
+                    var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+                    var bottom_of_window = $(window).scrollTop() + $(window).height();
+
+                    /* If the object is completely visible in the window, fade it */
+                    if( bottom_of_window > bottom_of_object ){
+
+                        $(this).animate({'opacity':'1'},500);
+
+                    }
+
+                }); 
+
+            });
+
+        });

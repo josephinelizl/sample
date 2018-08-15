@@ -13,6 +13,7 @@ body {
 	overflow-x: hidden;
     height: 100%;
 }
+
 .parallax1 {
     background-image: url('../img/1234.jpg');
     min-height: 10vh; 
@@ -23,8 +24,9 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
 .parallax2 {
-    background-image: url('../img/party.jpg');
+    background-image: url('../img/happyhour.jpg');
     min-height: 40vh; 
 
     /* Create the parallax scrolling effect */
@@ -33,6 +35,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
 .row:after{
     content: "";
     display: table;
@@ -41,7 +44,7 @@ body {
 
 a, button {
 	transition: all 0.3s ease;
-	color: white;
+	color: rgba(255,255,255, 0.8);
 }
 
 a:hover {
@@ -132,7 +135,6 @@ a:focus {
 
 h1 {
 	font-size: 4rem;
-	text-shadow: 2px 2px 8px #000000;
 	padding-bottom: 20px;
 }
 
@@ -276,19 +278,7 @@ h5 {
 }
 
 #instagramfeed{
-    padding-top: 4em;
-    width: 100%;
-}
-
-.btn-danger {
-	font-size: 1.5rem;
-	margin-top: 20px;
-	padding-left: 60px;
-	padding-right: 60px;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	background-color: #C66666;
-	border-color: #C66666;
+    padding-top: 5em;
 }
 
 .row {
@@ -315,6 +305,12 @@ h5 {
     margin-top: 4px;
     color:white 
 }
+.activenavigation{
+    color: darkgoldenrod !important;
+    border-bottom: 4px solid darkgoldenrod;
+    padding-bottom: 2px;
+}
+
 .nav-item > .nav-link{
     color: white;
 }
@@ -365,7 +361,7 @@ h5 {
 
 .carousel-inner img {
     width: 100%;
-   min-height: 100vh;
+    min-height: 100vh;  
 }
 
 /* about, play, leagues and party */
@@ -373,6 +369,7 @@ h5 {
 
 .aboutcontainer{
     font-family: Poppins;
+    letter-spacing: 3px;
 }
 .lowercontainer{
      height: 25em;
@@ -389,22 +386,22 @@ h5 {
 }
 
 .about {
-    background-image: url("../img/aboutus.png");
+    background-image: url("../img/about.jpg");
     background-size: cover;
 }
 
 .party{
-    background-image: url("../img/play.jpg");
+    background-image: url("../img/playofficial.jpg");
     background-size: cover;
 }
 
 .menu {
-    background-image: url("../img/menus.png");
+    background-image: url("../img/menusofficial.jpg");
     background-size: cover;
 }
 
 .leagues {
-    background-image: url("../img/leagues.png");
+    background-image: url("../img/bookofficial.jpg");
     background-size: cover;
 }
 
@@ -422,13 +419,14 @@ h5 {
 
 .happycontent{
     margin-top: -20px;
+    letter-spacing: 3px;
 }
 .happycontent > h2{
     color: white;
     text-align:  center;
     padding-top: 1em;
     font-size: 3.5em;
-    text-shadow: 2px 2px #000000;
+    font-weight: bolder;
 }
 .happyrow{
     width: 50%;
@@ -436,6 +434,8 @@ h5 {
     margin-top: 3em;
     color: white;
     font-size: 2em;
+    font-weight: bold;
+    opacity: 0;
 }
 
 .center-content {
@@ -448,8 +448,9 @@ h5 {
   color: white;
   line-height: 1; 
   font-size: 1.5em;
+  text-shadow: 2px 1px #000000;
   font-weight: normal;
-    opacity: 0;
+  opacity: 0;
 }
    
 .center-content > h1 {
@@ -457,6 +458,7 @@ h5 {
     color: white;
     line-height: 1;
     text-transform: uppercase;
+    font-weight: bolder;
     font-size: 2em;
     margin-bottom: 0;
     text-align: center;
@@ -467,105 +469,165 @@ h5 {
     line-height: 1;
     margin-bottom: 40px;
     font-size: 1em;
-    font-weight: normal;
-    text-align: center;
+    font-weight: bold;
+    text-align: center;   
 }
 
 .button{
   text-transform: uppercase;
-  font-size: .7em;
-  font-weight: bold;
+  font-size: .9em;
+  font-weight: bolder;
   width: 250px;
   color: white;
   padding: 20px;
-  border: 4px solid rgba(184, 134, 11, .7);
+  border: 5px solid rgb(184, 134, 11);
   text-decoration: none;
 }
 .button:hover{
     background-color: rgba(184, 134, 11, .9);
-    border-color: rgba(184, 134, 11, .9);
+    border-color: rgb(184, 134, 11);
     color: white;
     text-decoration: none;
 }
 
 /* Menu */
 
-.menu-content {
-  padding-top: 1em;
-  width: 60%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: auto;
-  color: white;
-  line-height: 1; 
-  font-size: 1.5em;
-  font-weight: normal;
-}
+.menunavigation{
+    background-image: url("../img/forcontact.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 60vh;
    
+}
+.menu-content {
+    padding-top: 4em;
+    letter-spacing: 5px;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    line-height: 2; 
+    font-size: 1.5em;
+    font-weight: normal;
+}
+
 .menu-content > h1 {
-    color: white;
+    color: darkgoldenrod;
     line-height: 1;
     text-transform: uppercase;
     font-size: 2em;
     margin-bottom: 0;
+    font-weight: bold;
     text-align: center;
 }
 
-.menu-content > h3{
-    color: white;
-    line-height: 1;
-    margin-bottom: 30px;
-    font-size: 1em;
-    font-weight: normal;
+hr{
+    width: 50%;
+    background-color: darkgoldenrod;
+    padding: .5px;
+}
+
+.menu-content > p {
+    color: #0e1111;
+    line-height: 2;
+    font-size: .55em;
     text-align: center;
+    padding: 2em 5em 0 5em; 
+    letter-spacing: .2;
 }
 
 .menubutton{
-    background-color: transparent;
     display: inline-flex;
+    justify-content: center;
+    cursor: pointer;
     text-transform: uppercase;
-    font-size: .7em;
-    font-weight: bold;
-    color: white;
-    padding: 20px;
-    border: 4px solid rgba(184, 134, 11, .7);
+    font-size: .8em;
+    font-weight: bolder;
+    letter-spacing: 5px;
+    color: #0e1111;
     text-decoration: none;
+    border-bottom: none;
+  
 }
 .menubutton:hover{
-    background-color: rgba(184, 134, 11, .9);
-    border-color: rgba(184, 134, 11, .9);
-    color: white;
+    color: darkgoldenrod;
     text-decoration: none;
+    border-bottom: 2px solid darkgoldenrod; 
+    padding-bottom: .5em;
 }
 
 .active{
-    background-color: darkgoldenrod;
+    color: darkgoldenrod !important;
+    border-bottom: 2px solid darkgoldenrod;
+    padding-bottom: .5em;
 }
 .menulist{
+    padding: 2em 0 1em 0;
     text-decoration: none;
+    text-align: center;
+    
 }
 
 .menulist > li {
     text-decoration: none;
-    display: inline-block;
-    margin-right: 15px;
-    align-items: center;
+    display: inline;
+    margin-right: 20px;
+    justify-content: center;
 }
 
 .menuitems{
-    text-align: center;
-}
-.menuitems > h1 {
-    padding-top: 1em;
-    font-size: 1.5em;
-    color: darkgoldenrod;
-    text-shadow: none;
+    font-family: Poppins;
+    font-weight: lighter;
+    font-style: normal;
+    letter-spacing: 5px;
+    padding-bottom: 10em;
 }
 
-.menuitems > h3{
-    color: white;
-    font-size: .7em;   
+.menucolumn{
+    float: left;
+    width: 50%;
+    text-align: center; 
+}
+
+.menucolumninner{
+    float: left;
+    width: 50%;
+    text-align: center;
+}
+
+
+.menucolumninner > h1 {
+    font-size: 1em;
+    color: #0e1111;
+    text-shadow: none;
+    font-weight: bold;
+    padding: 2em 0 0 7.5em;;
+    text-align: justify;
+
+    
+}
+.menucolumninner > h2 {
+    font-size: 1em;
+    color: darkgoldenrod;
+    text-shadow: none;
+    text-align: center;
+    font-weight: bold;
+    padding-top: 2em;
+}
+
+.menudesc {
+    margin: -1em 10.5em 0 10.5em;
+    font-size: .7em;
+    color: rgba(15, 17, 17, .8);
+    text-align: justify;
+    border-top: .5px dashed rgba(15, 17, 17, .1);
+    padding-top: .5em;
+    
+}
+
+#coffee {
+    display: none;
 }
 
 #drinks {
@@ -616,10 +678,15 @@ h5 {
 .footer {
     font-family: Poppins;
 	background-color: black;
-    height: auto;
     left: 0;
     bottom: 0;
-    width: 100%; 
+    height: auto;
+    width: 100%;
+    overflow: hidden;
+}
+
+.footercontent{
+    padding: 50px 0;
 }
 
 .column{
@@ -630,17 +697,6 @@ h5 {
     padding: 0 5em;
 }
 
-.storehours > h6{
-    color: white;
-    font-size: .8em;
-    margin-left: 1.5em;
-}
-
-.contact > h6{
-    color: white;
-    font-size: .8em;
-    margin-left: 1.5em;
-}
 .column1{
     float: left;
     width: 50%;
@@ -655,7 +711,7 @@ h5 {
 }
 
 .footericons1{
-    font-size: 20px;
+    font-size: 25px;
     display: inline-block;
     color: white;
     padding-bottom: 1em;
@@ -667,7 +723,7 @@ h5 {
 .ig {
     margin-left: 5px;
     padding-top: 5px;
-    font-size: 20.5px; !important;
+    font-size: 25px; !important;
 }
 .fa.fa-instagram{
     margin-right: 25px;
@@ -685,7 +741,7 @@ h5 {
 
 
 .footertitle{
-    font-size: 1.2em;
+    font-size: 1.5em;
     color: darkgoldenrod;
 }
 
@@ -698,6 +754,7 @@ h5 {
     font-weight: bold;
     text-decoration: none;
     padding-top: 1em;
+    margin-right: 10px;
 }
 
 .email > a:hover{
@@ -707,17 +764,19 @@ h5 {
 
 
 .storehours > h6 {
-    color: white;
-    font-size: .8em;
+    color: rgba(255,255,255, 0.8);
+    font-size: .9em;
+    margin-left: 1.5em;
 }
 
 .contact > h6 {
-    color: white;
-    font-size: .8em;
+    color: rgba(255,255,255, 0.8);
+    font-size: .9em;
+    margin-left: 1.5em;
 }
 
 .contact > h6 > a {
-    color: white;
+    color: rgba(255,255,255, 0.8);
 }
 
 .contact > h6 > a:hover{
@@ -771,7 +830,7 @@ h5 {
         width: 100%;
     }
     .navbar{
-        background-color: black;
+        background-color: #1D1D1A;
     }
     .surgelogo{
         width: 80%;
@@ -780,7 +839,17 @@ h5 {
     .carousel{
         padding-top: 5em;
     }
- 
+    .carousel-inner img {
+    width: 100%;
+    min-height: 50vh;
+    }
+    .menucolumn{
+        width: 100%;
+    }
+    .menucolumninner{
+        width: 100%;
+    }
+    
 }
 
 @media screen and (max-width: 540px) {
