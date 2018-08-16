@@ -298,13 +298,16 @@ h5 {
     border: 2px solid white;
 }
 
+.navbar-collapse.collapse {
+    margin-left: -8em;
+}
+
 .toggleicon{
     font-size:25px;
     margin-top: 4px;
     color:white 
 }
 .activenavigation{
-    color: darkgoldenrod !important;
     border-bottom: 4px solid darkgoldenrod;
     padding-bottom: 2px;
 }
@@ -334,13 +337,13 @@ h5 {
 }
 
 .try{
-  width: 100%;
-  background-color: black;
-  -webkit-transition: : all .5s;
-  -moz-transition: all .5s;
-  -ms-transition: all .5s;
-  -o-transition: all .5s;
-  transition:  all .5s;      
+    width: 100%;
+    background-color: black;
+    -webkit-transition: : all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+    transition:  all .5s;      
 } 
 
 #brand:hover{
@@ -364,6 +367,24 @@ h5 {
     width: 100%;
     min-height: 100vh;  
 }
+
+
+.carousel-fade .carousel-inner > .carousel-item {
+    transition-property: opacity;
+}
+.carousel-fade .carousel-inner > .carousel-item, .carousel-item.active.carousel-control-prev {
+    opacity: 0;
+}
+.carousel-fade .carousel-inner > .carousel-item.active, .carousel-item.next.carousel-control-prev {
+    opacity: 1;
+}
+.carousel-fade .carousel-inner > .next, .prev, .active.carousel-control-prev, .active.carousel-control-right{
+    left: 0;
+}
+.carousel-fade .carousel-inner > .carousel-item.next, .active.carousel-control-next, .carousel-item.prev, .active.carousel-control-prev {
+    transform: translate3d(0, 0, 0);
+}
+
 
 /* about, play, leagues and party */
 
@@ -491,7 +512,86 @@ h5 {
     text-decoration: none;
 }
 
-/* Menu */
+/* About Page */
+
+.aboutparallax {
+    background-image: url('../img/aboutparallax.jpg');
+    min-height: 50vh; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.aboutparallax {
+    background-image: url('../img/visionparallax.jpg');
+    min-height: 50vh; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.historycontent{
+    float: left;
+    width: 50%;
+    height: auto;
+    text-align: center;
+    margin: 8em 0;
+    justify-content: center;
+}
+
+.hero{
+    position: absolute;
+    text-align: center;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.hero > h1{
+    font-size: 6em;
+    font-weight: bold;
+    color: white;
+    letter-spacing: 5px;
+}
+
+.hero > h4{
+    font-size: 1em;
+    font-weight: bolder;
+    color: white;
+    letter-spacing: 5px;
+}
+
+.historyleft > h1{
+    color: darkgoldenrod;
+    font-weight: bold;
+}
+
+.historyleft > p {
+    margin: 0 3em;
+    line-height: 2;
+    font-weight: lighter;
+    letter-spacing: 2px;
+    text-align: justify;
+    color: #0e1111;
+    padding-top: 1.5em;
+}
+
+.historyright > img{
+    margin-top: 4em;
+    justify-content: left;
+    width: 80%;
+    height: 80%;
+    border: 1px dashed darkgoldenrod;
+    padding: 1em;
+}
+
+/* Menu Page */
 
 .menunavigation{
     background-image: url("../img/forcontact.jpg");
@@ -798,12 +898,15 @@ hr{
 	}
     
      .surgelogo{
-        width: 40%;
-        height: 25%;
+        width: 80%;
+        height: 40%;
         top: -30px;
     }
 
-	.tm-address-box { padding-left: 10px; }
+	.navbar-collapse.collapse {
+    margin-left: 0;
+    }
+    
 }
 
 @media screen and (max-width: 767px) {
@@ -833,16 +936,14 @@ hr{
         background-color: black;
     }
     .surgelogo{
-        width: 50%;
-        height: 25%;
+        width: 70%;
+        height: 35%;
        
     }
-    .carousel{
-        padding-top: 5em;
-    }
+   
     .carousel-inner img {
         width: 100%;
-        min-height: 50vh;
+        height: 50%;
     }
     .menucolumn{
         width: 100%;
@@ -850,7 +951,17 @@ hr{
     .menucolumninner{
         width: 100%;
     }
-    
+    .navbar-collapse.collapse {
+    margin-left: 0;
+    }
+     .historycontent{
+        width: 100%;
+    }
+    .historyright > img{
+    width: 95%;
+    height: 95%;
+    justify-content: center;
+   }
 }
 
 @media screen and (max-width: 540px) {
@@ -859,13 +970,36 @@ hr{
         width: 100%;
     }
     .surgelogo{
-        width: 40%;
-        height: 20%;
-        
+        width: 60%;
+        height: 30%;  
         
     }
     .center-content{
         width: 100%;
+    }
+    .carousel-inner img {
+        width: 100%;
+        height: 40%;
+    }
+    .navbar-collapse.collapse {
+    margin-left: 0;
+    }
+    
+    .historycontent{
+        width: 100%;
+    }
+    
+   .historyright > img{
+    width: 95%;
+    height: 95%;
+    justify-content: center;
+   }
+    .hero > h1{
+    font-size: 3em;
+   }
+
+    .hero > h4{
+        font-size: 1em;    
     }
    
 }
