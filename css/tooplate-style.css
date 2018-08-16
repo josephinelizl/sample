@@ -76,9 +76,7 @@ a:focus {
 
 .tm-text-white { color: #fff; }
 
-.tm-page-1-content { 
-	
-}
+
 
 .mainpageicons{
     position: absolute;
@@ -311,6 +309,7 @@ h5 {
     padding-bottom: 2px;
 }
 
+
 .nav-item > .nav-link{
     color: white;
 }
@@ -319,9 +318,11 @@ h5 {
     color: darkgoldenrod;
 }
 
+.navbar.navbar-transparent.navbar-expand-md{
+    position: fixed;
+}
 .navbar{
     width: 100%;
-    position: fixed;
     font-family: Poppins;
     font-size: 1.2em;
     z-index: 5;
@@ -349,8 +350,8 @@ h5 {
 
 .surgelogo{
     position: absolute;
-    width: 80%;
-    height: 80%;
+    width: 40%;
+    height: 40%;
     margin: auto;
     top: 0;
     bottom: 0;
@@ -434,7 +435,7 @@ h5 {
     margin-top: 3em;
     color: white;
     font-size: 2em;
-    font-weight: bold;
+    font-weight: bolder;
     opacity: 0;
 }
 
@@ -458,7 +459,7 @@ h5 {
     color: white;
     line-height: 1;
     text-transform: uppercase;
-    font-weight: bolder;
+    font-weight: 900;
     font-size: 2em;
     margin-bottom: 0;
     text-align: center;
@@ -557,7 +558,7 @@ hr{
     padding-bottom: .5em;
 }
 
-.active{
+.activebuttons{
     color: darkgoldenrod !important;
     border-bottom: 2px solid darkgoldenrod;
     padding-bottom: .5em;
@@ -795,20 +796,19 @@ hr{
 		padding-left: 5px;
 		padding-right: 5px;
 	}
+    
+     .surgelogo{
+        width: 40%;
+        height: 25%;
+        top: -30px;
+    }
 
 	.tm-address-box { padding-left: 10px; }
 }
 
 @media screen and (max-width: 767px) {
-	.tm-address-box {
-		padding-left: 0;
-		padding-top: 40px;
-	}
-	.tm-form-section {
-		padding-top: 80px;
-    	padding-bottom: 100px;
-	}
-     .upprecontainer{
+
+    .upprecontainer{
         display: block;
     }
     .leftsection{
@@ -830,18 +830,19 @@ hr{
         width: 100%;
     }
     .navbar{
-        background-color: #1D1D1A;
+        background-color: black;
     }
     .surgelogo{
-        width: 80%;
-        height: 60%;
+        width: 50%;
+        height: 25%;
+       
     }
     .carousel{
         padding-top: 5em;
     }
     .carousel-inner img {
-    width: 100%;
-    min-height: 50vh;
+        width: 100%;
+        min-height: 50vh;
     }
     .menucolumn{
         width: 100%;
@@ -853,22 +854,20 @@ hr{
 }
 
 @media screen and (max-width: 540px) {
-	.tm-address-box {
-		margin-bottom: 50px;
-	}
-	.tm-page-4-content { 
-		margin-bottom: 50px;
-	}
+	
     .lowercontainer{
         width: 100%;
     }
     .surgelogo{
-        width: 100%;
-        width: 100%;
-        height: 70%;
+        width: 40%;
+        height: 20%;
+        
+        
     }
     .center-content{
         width: 100%;
     }
    
 }
+
+
