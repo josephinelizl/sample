@@ -368,7 +368,18 @@ h5 {
     min-height: 100vh;  
 }
 
+.carousel-inner {
+    background-color: black;
+}
 
+.carousel-inner > .carousel-item{
+    -webkit-transition: -webkit-transform .6s ease-in-out left;
+    -moz-transition: -moz-transform .6s ease-in-out left;
+    -o-transition: -o-transform .6s ease-in-out left;
+    transition: transform .6s ease-in-out left;
+
+}
+/*
 .carousel-fade .carousel-inner > .carousel-item {
     transition-property: opacity;
 }
@@ -384,6 +395,8 @@ h5 {
 .carousel-fade .carousel-inner > .carousel-item.next, .active.carousel-control-next, .carousel-item.prev, .active.carousel-control-prev {
     transform: translate3d(0, 0, 0);
 }
+*/
+
 
 
 /* about, play, leagues and party */
@@ -515,17 +528,6 @@ h5 {
 /* About Page */
 
 .aboutparallax {
-    background-image: url('../img/aboutparallax.jpg');
-    min-height: 50vh; 
-
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.aboutparallax {
     background-image: url('../img/visionparallax.jpg');
     min-height: 50vh; 
 
@@ -536,7 +538,17 @@ h5 {
     background-size: cover;
 }
 
-.historycontent{
+.aboutgoalparallax {
+    background-image: url('../img/BLB17847.jpg');
+    min-height: 50vh; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.aboutcontent{
     float: left;
     width: 50%;
     height: auto;
@@ -553,26 +565,26 @@ h5 {
     transform: translate(-50%, -50%);
 }
 
-.hero > h1{
+.hero h1{
     font-size: 6em;
     font-weight: bold;
     color: white;
     letter-spacing: 5px;
 }
 
-.hero > h4{
+.hero h4{
     font-size: 1em;
     font-weight: bolder;
     color: white;
     letter-spacing: 5px;
 }
 
-.historyleft > h1{
+.aboutcontent h1{
     color: darkgoldenrod;
     font-weight: bold;
 }
 
-.historyleft > p {
+.aboutcontent p {
     margin: 0 3em;
     line-height: 2;
     font-weight: lighter;
@@ -582,7 +594,7 @@ h5 {
     padding-top: 1.5em;
 }
 
-.historyright > img{
+.historyright img{
     margin-top: 4em;
     justify-content: left;
     width: 80%;
@@ -590,6 +602,66 @@ h5 {
     border: 1px dashed darkgoldenrod;
     padding: 1em;
 }
+
+.locationleft, .locationright{
+    padding: 0 1em;
+}
+
+.mapiframe{
+    border: 1px dashed darkgoldenrod;
+    width: 100%;
+    height: 100%;
+    padding: 0 2em;
+}
+
+.parallaxcontent{
+    opacity: 0;
+}
+
+.parallaxcontent h1{
+    text-align: center;
+    color: darkgoldenrod;
+    padding-top: 1.4em;
+    font-weight: bolder;
+    letter-spacing: 5px;
+    text-shadow: 2px 1px #000;
+    font-size: 4.2em;
+}
+
+.parallaxcontent p{
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin: 0 5em;
+    text-shadow: 2px 1px #000;
+    font-size: 1.4em;
+}
+
+.foundercontainer{
+    border: 2px dashed darkgoldenrod;
+    padding-bottom: 1.5em;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.foundercontainer p {
+    text-align: center;
+}
+
+.founderimage{
+    transition: .8s ease-in-out;
+    width: 90%;
+    height: auto;
+    padding-top: 1.2em; 
+    margin: 0 auto;
+}
+
+.founderimage:hover{
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+}
+
 
 /* Menu Page */
 
@@ -906,7 +978,19 @@ hr{
 	.navbar-collapse.collapse {
     margin-left: 0;
     }
-    
+    .aboutcontent{
+        width: 100%;
+        margin: 2em 0;
+    }
+     .locationleft{
+        order: 2;
+    }  
+    .locationright{
+        order: 1;
+    }
+    .foundercontainer{
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 767px) {
@@ -939,8 +1023,7 @@ hr{
         width: 70%;
         height: 35%;
        
-    }
-   
+    } 
     .carousel-inner img {
         width: 100%;
         height: 50%;
@@ -954,14 +1037,29 @@ hr{
     .navbar-collapse.collapse {
     margin-left: 0;
     }
-     .historycontent{
+     .aboutcontent{
         width: 100%;
     }
+
     .historyright > img{
     width: 95%;
     height: 95%;
     justify-content: center;
    }
+    .locationleft{
+        order: 2;
+    }  
+    .locationright{
+        order: 1;
+    }
+     .parallaxcontent p {
+        padding-bottom: 2em;
+        text-align: justify;
+    }
+    .foundercontainer{
+        width: 100%;
+    }
+
 }
 
 @media screen and (max-width: 540px) {
@@ -983,25 +1081,41 @@ hr{
     }
     .navbar-collapse.collapse {
     margin-left: 0;
-    }
-    
-    .historycontent{
+    }   
+    .aboutcontent{
         width: 100%;
+        margin: 2em 0;
     }
     
-   .historyright > img{
+   .historyright img{
     width: 95%;
     height: 95%;
     justify-content: center;
+    margin-top: 1em;
+    
    }
-    .hero > h1{
+    .hero h1{
     font-size: 3em;
    }
 
-    .hero > h4{
+    .hero h4{
         font-size: 1em;    
+    }  
+    .locationleft{
+        order: 2;
+    }  
+    .locationright{
+        order: 1;
     }
-   
+
+    .parallaxcontent p {
+        padding-bottom: 2em;
+        text-align: justify;
+    }
+    
+    .foundercontainer{
+        width: 100%;
+    }
 }
 
 
