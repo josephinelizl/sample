@@ -1110,11 +1110,13 @@ hr{
 
     .parallaxcontent p {
         padding-bottom: 2em;
-        text-align: justify;
     }
     
     .foundercontainer{
-        width: 100%;
+        width: 70%;
+    }
+    .menuimages{
+        display:none
     }
 }
 
