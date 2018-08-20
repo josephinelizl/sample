@@ -6,8 +6,24 @@ http://www.tooplate.com/view/2096-individual
 
 */
 
+@font-face{
+    font-family: surgefont;
+    src: url(../font-awesome-4.5.0/fonts/TTF/ATCArquette-Bold.ttf) format('truetype');
+}
+
+@font-face{
+    font-family: surgefontlighter;
+    src: url(../font-awesome-4.5.0/fonts/TTF/ATCArquette-Light.ttf) format('truetype');
+}
+
+
+@font-face{
+    font-family: surgefontmedium;
+    src: url(../font-awesome-4.5.0/fonts/TTF/ATCArquette-Medium.ttf) format('truetype');
+}
+
 body {
-	font-family: Poppins;
+	font-family: surgefont, surgefontlighter, surgefontmedium;
 	font-size: 19px;
 	font-weight: 300;
 	overflow-x: hidden;
@@ -99,7 +115,7 @@ a:focus {
 }
 
 .mainpageicons > a:hover{
-    color: darkgoldenrod;
+    color: #fab040;
 }
 .fa-instagram{
     margin-left: 25px;
@@ -308,17 +324,21 @@ h5 {
     color:white 
 }
 .activenavigation{
-    border-bottom: 4px solid darkgoldenrod;
+    border-bottom: 4px solid #fab040;
     padding-bottom: 2px;
 }
-
 
 .nav-item > .nav-link{
     color: white;
 }
 
+
 .nav-item > .nav-link:hover{
-    color: darkgoldenrod;
+    color: #fab040;
+}
+
+.nav-item{
+    padding: 0 .5em;
 }
 
 .navbar.navbar-transparent.navbar-expand-md{
@@ -326,7 +346,7 @@ h5 {
 }
 .navbar{
     width: 100%;
-    font-family: Poppins;
+    font-family: surgefontmedium;
     font-size: 1.2em;
     z-index: 5;
     -webkit-transition: : all .3s;
@@ -336,7 +356,9 @@ h5 {
     transition:  all .3s; 
 }
 
+
 .try{
+    height: 60px;
     width: 100%;
     background-color: black;
     -webkit-transition: : all .5s;
@@ -353,8 +375,8 @@ h5 {
 
 .surgelogo{
     position: absolute;
-    width: 40%;
-    height: 40%;
+    width: 50%;
+    height: 50%;
     margin: auto;
     top: 0;
     bottom: 0;
@@ -363,6 +385,11 @@ h5 {
     z-index: 1;
 }
 
+.surgelogomobile{
+    display: none;
+}
+
+
 .carousel-inner img {
     width: 100%;
     min-height: 100vh;  
@@ -370,14 +397,16 @@ h5 {
 
 .carousel-inner {
     background-color: black;
+     backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
 }
 
 .carousel-inner > .carousel-item{
-    -webkit-transition: -webkit-transform .6s ease-in-out left;
-    -moz-transition: -moz-transform .6s ease-in-out left;
-    -o-transition: -o-transform .6s ease-in-out left;
-    transition: transform .6s ease-in-out left;
-
+    -webkit-transition: -webkit-transform .6s ease-in-out;
+    -moz-transition: -moz-transform .6s ease-in-out;
+    -o-transition: -o-transform .6s ease-in-out;
+    transition: transform .6s ease-in-out;
+   
 }
 /*
 .carousel-fade .carousel-inner > .carousel-item {
@@ -393,7 +422,10 @@ h5 {
     left: 0;
 }
 .carousel-fade .carousel-inner > .carousel-item.next, .active.carousel-control-next, .carousel-item.prev, .active.carousel-control-prev {
-    transform: translate3d(0, 0, 0);
+      -webkit-transition: -webkit-transform .6s ease-in-out left;
+    -moz-transition: -moz-transform .6s ease-in-out left;
+    -o-transition: -o-transform .6s ease-in-out left;
+    transition: transform .6s ease-in-out left;
 }
 */
 
@@ -403,7 +435,7 @@ h5 {
 
 
 .aboutcontainer{
-    font-family: Poppins;
+    font-family: surgefont;
     letter-spacing: 3px;
 }
 .lowercontainer{
@@ -514,7 +546,7 @@ h5 {
   font-weight: bolder;
   width: 250px;
   color: white;
-  padding: 20px;
+  padding: 15px;
   border: 5px solid rgb(184, 134, 11);
   text-decoration: none;
 }
@@ -580,7 +612,7 @@ h5 {
 }
 
 .aboutcontent h1{
-    color: darkgoldenrod;
+    color: #fab040;
     font-weight: bold;
 }
 
@@ -599,7 +631,7 @@ h5 {
     justify-content: left;
     width: 80%;
     height: 80%;
-    border: 1px dashed darkgoldenrod;
+    border: 1px dashed #fab040;
     padding: 1em;
 }
 
@@ -608,7 +640,7 @@ h5 {
 }
 
 .mapiframe{
-    border: 1px dashed darkgoldenrod;
+    border: 1px dashed #fab040;
     width: 100%;
     height: 100%;
     padding: 0 2em;
@@ -620,7 +652,7 @@ h5 {
 
 .parallaxcontent h1{
     text-align: center;
-    color: darkgoldenrod;
+    color: #fab040;
     padding-top: 1.4em;
     font-weight: bolder;
     letter-spacing: 5px;
@@ -639,7 +671,7 @@ h5 {
 }
 
 .foundercontainer{
-    border: 2px dashed darkgoldenrod;
+    border: 2px dashed #fab040;
     padding-bottom: 1.5em;
     width: 50%;
     margin: 0 auto;
@@ -686,7 +718,7 @@ h5 {
 }
 
 .menu-content > h1 {
-    color: darkgoldenrod;
+    color: #fab040;
     line-height: 1;
     text-transform: uppercase;
     font-size: 2em;
@@ -695,11 +727,13 @@ h5 {
     text-align: center;
 }
 
+/*
 hr{
     width: 50%;
-    background-color: darkgoldenrod;
+    background-color: #fab040;
     padding: .5px;
 }
+*/
 
 .menu-content > p {
     color: #0e1111;
@@ -715,7 +749,7 @@ hr{
     justify-content: center;
     cursor: pointer;
     text-transform: uppercase;
-    font-size: .8em;
+    font-size: 1em;
     font-weight: bolder;
     letter-spacing: 5px;
     color: #0e1111;
@@ -724,22 +758,21 @@ hr{
   
 }
 .menubutton:hover{
-    color: darkgoldenrod;
+    color: #fab040;
     text-decoration: none;
-    border-bottom: 2px solid darkgoldenrod; 
+    border-bottom: 2px solid #fab040; 
     padding-bottom: .5em;
 }
 
 .activebuttons{
-    color: darkgoldenrod !important;
-    border-bottom: 2px solid darkgoldenrod;
+    color: #fab040 !important;
+    border-bottom: 2px solid #fab040;
     padding-bottom: .5em;
 }
 .menulist{
     padding: 2em 0 1em 0;
     text-decoration: none;
     text-align: center;
-    
 }
 
 .menulist > li {
@@ -750,7 +783,7 @@ hr{
 }
 
 .menuitems{
-    font-family: Poppins;
+    font-family: surgefontlighter;
     font-weight: lighter;
     font-style: normal;
     letter-spacing: 5px;
@@ -771,7 +804,7 @@ hr{
 
 
 .menucolumninner > h1 {
-    font-size: 1em;
+    font-size: 1.2em;
     color: #0e1111;
     text-shadow: none;
     font-weight: bold;
@@ -781,8 +814,8 @@ hr{
     
 }
 .menucolumninner > h2 {
-    font-size: 1em;
-    color: darkgoldenrod;
+    font-size: 1.2em;
+    color: #fab040;
     text-shadow: none;
     text-align: center;
     font-weight: bold;
@@ -791,7 +824,7 @@ hr{
 
 .menudesc {
     margin: -1em 10.5em 0 10.5em;
-    font-size: .7em;
+    font-size: .9em;
     color: rgba(15, 17, 17, .8);
     text-align: justify;
     border-top: .5px dashed rgba(15, 17, 17, .1);
@@ -812,6 +845,17 @@ hr{
 }
 
 
+#coffeeimg{
+    display: none;
+}
+
+#drinksimg{
+    display: none;
+}
+
+#foodimg{
+    display: none;
+}
 /* contact */
 #contact{
     color: white;
@@ -839,7 +883,7 @@ hr{
 /* footer */
 
 .footer1 {
-    font-family: Poppins;
+    font-family: surgefontmedium;
 	background-color: black;
     height: auto;
     position: fixed;
@@ -849,17 +893,18 @@ hr{
     z-index: 1;
 }
 .footer {
-    font-family: Poppins;
+    font-family: surgefontmedium;
 	background-color: black;
     left: 0;
     bottom: 0;
     height: auto;
     width: 100%;
     overflow: hidden;
+    
 }
 
 .footercontent{
-    padding: 50px 0;
+    padding: 3.125em 10em;
 }
 
 .column{
@@ -874,7 +919,10 @@ hr{
     float: left;
     width: 50%;
     margin-top: .5em;
-    text-align: center;
+}
+
+.one{
+    padding-left: 3.8em;
 }
 
 .footericons{
@@ -903,23 +951,25 @@ hr{
 }
 
 .footericons:hover{
-    color: darkgoldenrod;
+    color: #fab040;
     text-decoration: none;
 }
 
 .footericons1:hover{
-    color: darkgoldenrod;
+    color: #fab040;
     text-decoration: none;
 }
 
 
 .footertitle{
-    font-size: 1.5em;
-    color: darkgoldenrod;
+    font-size: 1.4em;
+    color: #fab040;
 }
 
 .email{
     padding-top: .6em;
+    text-align: right;
+    padding-right: 2em;
 }
 
 .email > a{
@@ -932,19 +982,19 @@ hr{
 
 .email > a:hover{
     text-decoration: none;
-    color: darkgoldenrod;    
+    color: #fab040;    
 }
 
 
 .storehours > h6 {
     color: rgba(255,255,255, 0.8);
-    font-size: .9em;
+    font-size: 1em;
     margin-left: 1.5em;
 }
 
 .contact > h6 {
     color: rgba(255,255,255, 0.8);
-    font-size: .9em;
+    font-size:  1em;
     margin-left: 1.5em;
 }
 
@@ -954,7 +1004,7 @@ hr{
 
 .contact > h6 > a:hover{
     text-decoration: none;
-    color: darkgoldenrod;
+    color: #fab040;
 }
 
 /* media */
@@ -969,14 +1019,25 @@ hr{
 		padding-right: 5px;
 	}
     
-     .surgelogo{
-        width: 80%;
-        height: 40%;
-        top: -30px;
+      .surgelogo{
+        width: 55%;
+        height: 30%;
     }
 
+    .surgelogomobile{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        margin: auto;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 1;
+    }
+    
 	.navbar-collapse.collapse {
-    margin-left: 0;
+        margin-left: 0;
     }
     .aboutcontent{
         width: 100%;
@@ -990,6 +1051,32 @@ hr{
     }
     .foundercontainer{
         width: 100%;
+    }
+    .try{
+        height: 80px;
+    }
+    .footercontent{
+    padding: 3.125em 0em;
+    }
+    .email{
+        text-align: center;
+        padding-right: 0;
+        font-size: .8em;
+    }
+    .one{
+        text-align: center;
+        padding: 0;    
+    }
+      .menucolumn{
+        width: 100%;
+    }
+    .menucolumninner{
+        width: 100%;
+    }
+    .center-content{
+        width: 100%;
+        padding: 0 1em;
+        font-family: surgefontlighter;
     }
 }
 
@@ -1019,11 +1106,22 @@ hr{
     .navbar{
         background-color: black;
     }
-    .surgelogo{
-        width: 70%;
-        height: 35%;
-       
-    } 
+     .surgelogo{
+        width: 55%;
+        height: 30%;
+    }
+
+    .surgelogomobile{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        margin: auto;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 1;
+    }
     .carousel-inner img {
         width: 100%;
         height: 50%;
@@ -1059,7 +1157,25 @@ hr{
     .foundercontainer{
         width: 100%;
     }
-
+    .try{
+        height: 80px;
+    }
+    .footercontent{
+    padding: 3.125em 0em;
+    }
+    .email{
+        text-align: center;
+        padding-right: 0;
+        font-size: .8em;
+    }
+    .one{
+        text-align: center;
+        padding: 0;
+    }
+    .center-content{
+        width: 100%;
+        padding: 0 1em;
+    }
 }
 
 @media screen and (max-width: 540px) {
@@ -1067,13 +1183,26 @@ hr{
     .lowercontainer{
         width: 100%;
     }
-    .surgelogo{
-        width: 60%;
-        height: 30%;  
-        
+     .surgelogo{
+        width: 55%;
+        height: 30%;
+    }
+
+    .surgelogomobile{
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        margin: auto;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 1;
     }
     .center-content{
         width: 100%;
+        padding: 0 1em;
     }
     .carousel-inner img {
         width: 100%;
@@ -1116,7 +1245,28 @@ hr{
         width: 70%;
     }
     .menuimages{
-        display:none
+        display: none;
+    }
+    .try{
+        height: 80px;
+    }
+    .footercontent{
+    padding: 3.125em 0em;
+    }
+    .email{
+        text-align: center;
+        padding-right: 0;
+        font-size: .8em;
+    }
+    .one{
+        text-align: center;
+        padding: 0;
+    }
+     .menucolumn{
+        width: 100%;
+    }
+    .menucolumninner{
+        width: 100%;
     }
 }
 

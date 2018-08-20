@@ -2,11 +2,17 @@
 
     /* navbar changes color when scrolled down */
     $(window).scroll(function() {
-                  if ($(this).scrollTop() > 10) {
+                  if ($(this).scrollTop() > 70) {
                       $('.navbar').addClass('try');
+                      $('.navbar-brand.mr-0 img').attr('src', '../2096_individual/img/surge.png');
+                      $('.navbar-brand.mr-0 img').attr('width', '150px');
+                      $('.navbar-brand.mr-0 img').attr('height', '40px');
+                     
                   } else {
                       $('.navbar').removeClass('try');
-
+                      $('.navbar-brand.mr-0 img').attr('src', '../2096_individual/img/sample.png');
+                      $('.navbar-brand.mr-0 img').attr('width', '180px');
+                      $('.navbar-brand.mr-0 img').attr('height', '55px');
                   }
      });
      /* Show bottom footer and hide the static footer when srolled down at the bottom of the page */         
@@ -30,11 +36,19 @@
             var coffee = document.getElementById("coffee");
             var drinks= document.getElementById("drinks");
             var food = document.getElementById("food");
+            var dailyimg = document.getElementById("dailyspecialimg");
+            var coffeeimg = document.getElementById("coffeeimg");
+            var drinksimg = document.getElementById("drinksimg");
+            var foodimg = document.getElementById("foodimg");
             if( a == 1 ){
                 dailyspecials.style.display = "block";
                 coffee.style.display  = "none";
                 drinks.style.display = "none";
                 food.style.display = "none";
+                dailyimg.style.display = "block";
+                coffeeimg.style.display  = "none";
+                drinksimg.style.display = "none";
+                foodimg.style.display = "none";
 
             }
             else if( a == 2 ){
@@ -42,12 +56,20 @@
                 coffee.style.display  = "block";
                 drinks.style.display = "none";
                 food.style.display = "none";
+                dailyimg.style.display = "none";
+                coffeeimg.style.display  = "block";
+                drinksimg.style.display = "none";
+                foodimg.style.display = "none";
             }
             else if( a == 3 ){
                 dailyspecials.style.display = "none";
                 coffee.style.display  = "none";
                 drinks.style.display = "block";
                 food.style.display = "none";
+                dailyimg.style.display = "none";
+                coffeeimg.style.display  = "none";
+                drinksimg.style.display = "block";
+                foodimg.style.display = "none";
             }
                 
               else
@@ -56,6 +78,10 @@
                 coffee.style.display  = "none";
                 drinks.style.display = "none";
                 food.style.display = "block";
+                dailyimg.style.display = "none";
+                coffeeimg.style.display  = "none";
+                drinksimg.style.display = "none";
+                foodimg.style.display = "block";
               }
 
             }
