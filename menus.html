@@ -77,10 +77,12 @@ http://www.tooplate.com/view/2096-individual
         <div class="menu-content" id="menus">
          <h1>MENUS</h1> 
 <!--            <hr>-->
+             <div class="menuimages">
                <img src="../2096_individual/img/menuspecial.png" alt="daily specials" style="margin-left: 42%;width: 15%;padding: 3.2em 0 2em 0;" class="menuimages" id="dailyspecialimg">
              <img src="../2096_individual/img/menucoffee.png" alt="coffee" style="margin-left: 45%;width: 12%;padding-bottom: 2em;" class="menuimages" id="coffeeimg">
              <img src="../2096_individual/img/menudrinks.png" alt="drinks" style="margin-left: 42%;width: 15%;padding: 1.6em 0 .5em 0;" class="menuimages" id="drinksimg">
              <img src="../2096_individual/img/menufood.png" alt="food" style="margin-left: 49%;width: 2%;padding: 2.2em 0 2em 0;" class="menuimages" id="foodimg">
+             </div>
               <ul class="menulist">
                    <li><a class="menubutton activebuttons" onclick="changeMenu(1)">Daily Specials</a>
                    <li><a class="menubutton" onclick="changeMenu(2)" >Coffee</a>
@@ -372,34 +374,47 @@ http://www.tooplate.com/view/2096-individual
          </div>   
            
         
-        <div class="footer" id="tm-section-4"> 
+     <!-- displayed at the end of the website -->
+           <div class="footer" id="tm-section-4"> 
                     <div class="row footercontent">
-                         <div class="column one">
-                          <h5 class="footertitle">ADDRESS</h5>
+                        <div class="columnfooter">
+                            <a href="#" class="footericons1"><i class="fa fa-facebook-official"></i></a>
+                            <a href="#" class="footericons1"><i class="fa fa-instagram"></i></a> <br />
+                            <a href="#" class="footericons1"><i class="fa fa-yelp yelp"></i></a>
+                            <a href="#" class="footericons1"><i class="fa fa-google"></i></a>
+                        </div>
+                    
+                        <div class="columnfooter">
+                            <h5 class="footertitle">CONTACT</h5>
+                              <div class="contact">
+                              <h6>Tel: 773-961-8096</h6>
+                              <h6>surgebilliards@gmail.com</h6>
+                          </div>
+                        </div>
+                        
+                         <div class="columnfooter">
+                          <h5 class="footertitle">HOURS</h5>
+                             <div class="storehours">
+                              <h6>Sun-Thur: 7am-1am </h6>
+                              <h6>Fri-Sat: 7am-2am</h6>           
+                            </div>
+                          </div>
+                        
+                          <div class="columnfooter">
+                              <h5 class="footertitle">ADDRESS</h5>
                               <div class="contact">
                               <h6><a href="https://goo.gl/maps/YcsD1SwwpuN2"target="_blank"> 3242 W Montrose Ave<br />
                               Chicago, IL 60618</a></h6>
 
                              </div>
                           </div>
-                        <div class="column two">
-                            <h5 class="footertitle">CONTACT</h5>
-                              <div class="contact">
-                              <h6>(773) 961 - 8096</h6>
-                              <h6>surgebilliards@gmail.com</h6>
-                              <a href="#" class="footericons1"><i class="fa fa-facebook-official fb"></i></a>
-                              <a href="#" class="footericons1"><i class="fa fa-instagram ig"></i></a>   
-                          </div>
-                        </div>
-                         <div class="column three">
-                          <h5 class="footertitle">STORE HOURS</h5>
-                             <div class="storehours">
-                              <h6>Sunday - Thursday<br /> 7 am - 1am </h6>
-                              <h6>Friday - Saturday<br /> 7 am - 2am</h6>           
+                        
+                            <div class="columnfooter">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d370.8530420822551!2d-87.71018766657889!3d41.961108018142234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fcdec2cdb5d2f%3A0x41a1062564ed71f6!2sSurge+Coffee+Bar+%26+Billiards!5e0!3m2!1sen!2sph!4v1534484572432" frameborder="0"  allowfullscreen class="mapiframe"></iframe>
                             </div>
-                          </div>
                       </div>
                   </div> 
+          <!-- end of footer -->
        
     </body>
 </html>

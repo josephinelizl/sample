@@ -2,19 +2,13 @@
 
     /* navbar changes color when scrolled down */
     $(window).scroll(function() {
-                  if ($(this).scrollTop() > 70) {
-                      $('.navbar').addClass('try');
-                      $('.navbar-brand.mr-0 img').attr('src', '../2096_individual/img/surge.png');
-                      $('.navbar-brand.mr-0 img').attr('width', '150px');
-                      $('.navbar-brand.mr-0 img').attr('height', '40px');
-                     
+                  if ($(this).scrollTop() > 70 && $('.navbar').width() > 760) {
+                      $('.navbar').addClass('try');  
                   } else {
                       $('.navbar').removeClass('try');
-                      $('.navbar-brand.mr-0 img').attr('src', '../2096_individual/img/sample.png');
-                      $('.navbar-brand.mr-0 img').attr('width', '180px');
-                      $('.navbar-brand.mr-0 img').attr('height', '55px');
                   }
      });
+    
      /* Show bottom footer and hide the static footer when srolled down at the bottom of the page */         
     $(window).scroll(function() {
         if($(window).scrollTop() + $(window).height() > $(document).height() - 220) {
@@ -23,6 +17,7 @@
                   $('.footer1').show();
           }
     });
+
         /* navigation links hide when click */
              $(document).on('click','#collapsingNavbar2',function(e) {
                 if( $(e.target).is('a') ) {
