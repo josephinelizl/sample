@@ -35,8 +35,6 @@ body {
     min-height: 100vh; 
 
     /* Create the parallax scrolling effect */
-    -webkit-background-attachment: fixed!important;
-    -moz-background-attachment: fixed!important;
     background-attachment: fixed;
     background-position: center top;
     background-repeat: no-repeat;
@@ -47,8 +45,6 @@ body {
     min-height: 100vh; 
 
     /* Create the parallax scrolling effect */
-     -webkit-background-attachment: fixed!important;
-    -moz-background-attachment: fixed!important;
     background-attachment: fixed;
     background-position: center top;
     background-repeat: no-repeat;
@@ -59,8 +55,6 @@ body {
     min-height: 100vh; 
 
     /* Create the parallax scrolling effect */
-     -webkit-background-attachment: fixed!important;
-    -moz-background-attachment: fixed!important;
     background-attachment: fixed;
     background-position: center top;
     background-repeat: no-repeat;
@@ -388,7 +382,6 @@ h5 {
 
 
 .try{
-    height: 60px;
     width: 100%;
     background-color: black;
     -webkit-transition: : all .5s;
@@ -426,32 +419,17 @@ h5 {
     -webkit-transition: -webkit-transform .6s ease-in-out;
     -moz-transition: -moz-transform .6s ease-in-out;
     -o-transition: -o-transform .6s ease-in-out;
-    transition: transform .6s ease-in-out;
-   
+    transition: transform .6s ease-in-out;  
 }
-/*
-.carousel-fade .carousel-inner > .carousel-item {
-    transition-property: opacity;
-}
-.carousel-fade .carousel-inner > .carousel-item, .carousel-item.active.carousel-control-prev {
-    opacity: 0;
-}
-.carousel-fade .carousel-inner > .carousel-item.active, .carousel-item.next.carousel-control-prev {
-    opacity: 1;
-}
-.carousel-fade .carousel-inner > .next, .prev, .active.carousel-control-prev, .active.carousel-control-right{
-    left: 0;
-}
-.carousel-fade .carousel-inner > .carousel-item.next, .active.carousel-control-next, .carousel-item.prev, .active.carousel-control-prev {
-      -webkit-transition: -webkit-transform .6s ease-in-out left;
-    -moz-transition: -moz-transform .6s ease-in-out left;
-    -o-transition: -o-transform .6s ease-in-out left;
-    transition: transform .6s ease-in-out left;
-}
-*/
 
-
-
+.carousel-fade .active.carousel-item-left, 
+.carousel-fade .active.carousel-item-prev, 
+.carousel-fade .carousel-item-next, 
+.carousel-fade .carousel-item-prev,
+.carousel-fade .carousel-item.active{
+  -webkit-transform: none !impornant;
+ transform: none !important ;
+}
 /* about, play, leagues and party */
 
 
@@ -609,7 +587,7 @@ h5 {
     width: 50%;
     height: auto;
     text-align: center;
-    margin: 8em 0;
+    margin: 4em 0;
     justify-content: center;
 }
 
@@ -689,13 +667,17 @@ h5 {
     width: 33.33%;
     height: auto;
     text-align: center;
-    margin: 4em 0;
+    margin: 2em 0;
+    padding: 2em 0 2em 0;
     justify-content: center;
+    border: 1px solid darkgoldenrod;
+    background-color: rgba(8, 11, 12, .7);
 }
 
 .whycontent h1{
     color: darkgoldenrod;
     font-weight: bold;
+    margin-bottom: -.5em;
 }
 
 .whycontent p {
@@ -704,15 +686,17 @@ h5 {
     font-weight: lighter;
     letter-spacing: 2px;
     text-align: justify;
-    color: #0e1111;
-    padding-top: 5em;
+    color: whitesmoke;
+    padding-top: .5em;
 }
 
 .press{
     min-height: 50vh;
+    padding-bottom: 1.5em;
 }
 
 .presscarousel{
+    padding-top: 2em;
     margin: auto;
     top: 25%;
    
@@ -722,24 +706,31 @@ h5 {
     width: 33.33%;
     height: auto;
     text-align: center;
-    margin: 4em 0;
     justify-content: center;
-    padding: 0 5em;
+    padding: 4em 5em;
 }
 
 
-.presscontent h2{
+.carouselinnerpress{
+    height: auto;
+}
+
+
+.pressarticle h2{
+    font-family: surgefont;
     color: darkgoldenrod;
     font-weight: bold;
     text-align: center;
+    letter-spacing: 2px;
 }
 
-.presscontent h4 {
+.pressarticle h4 {
+    font-family: surgefontmedium;
     margin: 0 3em;
     font-weight: lighter;
     letter-spacing: 2px;
-    text-align: center;
-    color: #0e1111;
+    text-align: justify;
+    color: white;
     padding-bottom: 2em;
 }
 .pressicons{
@@ -747,21 +738,44 @@ h5 {
     color: dimgray;
 }
 
+.pressarticle{
+    min-height: 30vh;
+    
+}
+
 .pressbutton{
   text-transform: uppercase;
   font-size: .9em;
   font-weight: bolder;
-  width: 300px;
-  color: #0e1111;
-  padding: 20px;
+  width: 250px;
+  color: white;
+  padding: 15px;
   border: 2.5px solid rgb(184, 134, 11);
   text-decoration: none;
+  position: relative;
+  top:-20px;
+    
 }
 .pressbutton:hover{
     background-color: rgba(184, 134, 11, .9);
     border-color: rgb(184, 134, 11);
     color: white;
     text-decoration: none;
+}
+
+.presscolorone{
+    background-color: rgba(28, 42, 45, .6);
+   
+}
+
+.presscolortwo{
+    background-color: rgba(36, 48, 53, .6) ;
+}
+
+
+.presscolorthree{
+    background-color: rgba(50, 55, 58, .6) ;
+    
 }
 
 
@@ -807,8 +821,7 @@ h5 {
 
 hr{
     width: 50%;
-    background-color: darkgoldenrod;
-    padding: .5px;
+    background-color: darkgoldenrod;    
 }
 
 
@@ -970,7 +983,6 @@ hr{
     z-index: 1;
 }
 .footer {
-    font-family: surgefontmedium;
 	background-color: black;
     left: 0;
     bottom: 0;
@@ -981,21 +993,25 @@ hr{
 }
 
 .footercontent{
-    padding: 3em 0;
+    padding: .5em 0;
 }
 
 .columnfooter{
     float: left;
-    width: 20%;
-    margin-top: 1.5em;
+    width: 20%;    
+    width: 20%;    
     text-align: left;
-    padding: 0 4em;
+    padding: 0;
 }
 
 .column1{
     float: left;
     width: 50%;
     margin-top: .5em;
+}
+
+.ficons{
+    padding-left: 6em;    
 }
 
 .one{
@@ -1010,9 +1026,9 @@ hr{
 }
 
 .footericons1{
-    font-size: 35px;
+    font-size: 45px;
     display: inline-block;
-    color: white;
+    color: darkgoldenrod;
 }
 
 .ig {
@@ -1029,15 +1045,17 @@ hr{
 }
 
 .footericons1:hover{
-    color: darkgoldenrod;
+    color: white;
     text-decoration: none;
 }
 
 
 .footertitle{
-    font-size: 1.4em;
+    font-family: surgefont;
+    font-size: 1.6em;
     color: darkgoldenrod;
     margin-left: -1em;
+    padding-top: .5em;
 }
 
 .email{
@@ -1062,12 +1080,12 @@ hr{
 
 .storehours > h6 {
     color: rgba(255,255,255, 0.8);
-    font-size: 1em;
+    font-size: 1.2em;
 }
 
 .contact > h6 {
     color: rgba(255,255,255, 0.8);
-    font-size:  1em;
+    font-size:  1.2em;
     
 }
 
@@ -1081,11 +1099,18 @@ hr{
 }
 
 .mapiframe{
-    width: 300px;
-    height: 150px;
+    width: 350px;
+    height: 270px;
     padding-right: 4em;
+    padding-top: 1em;
+    border-style: none;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
 }
 
+.vertical-center{
+    padding-top: 5em;
+}
 /* media */
 
 @media screen and (max-width: 991px) {
@@ -1181,7 +1206,33 @@ hr{
         display: none;
     }
     .menucolumninner  h1 {
-        padding: 2em 0 0 6em;
+        padding: 2em 0 0 0;
+        text-align: center;
+    }
+     .menubutton{
+        display: block;
+    }
+       .columnfooter{
+        width: 100%;
+        text-align: center;
+    }
+    .vertical-center{
+        padding-left: 5em;
+    }
+    .ficons{
+        padding-left: 0;
+    }
+    .mapiframe{
+        padding-left: 10em;
+        width: 600px;
+    }
+    .storehours{
+        text-align: justify;
+        padding-left: 20em;
+    }
+    .contact{
+        text-align: justify;
+        padding-left: 20em;
     }
 }
 
@@ -1195,10 +1246,6 @@ hr{
     }
     .rightsection{
         max-width: 100%;
-    }
-    .columnfooter{
-        width: 100%;
-        align-items: center
     }
     .column1 {
         width: 100%;
@@ -1304,7 +1351,36 @@ hr{
         display: none;
     }
     .menucolumninner  h1 {
-        padding: 2em 0 0 6em;
+        padding: 2em 0 0 0;
+        text-align: center;
+    }
+     .menubutton{
+        display: block;
+    }
+    .columnfooter{
+        width: 100%;
+        text-align: center;
+    }
+    .vertical-center{
+        padding-left: 5em;
+    }
+    .ficons{
+        padding-left: 0;
+    }
+    .mapiframe{
+        padding-left: 5em;
+        width: 430px;
+    }
+    .storehours{
+        text-align: justify;
+        padding-left: 2.5em;
+    }
+    .contact{
+        text-align: justify;
+        padding-left: 2.5em;
+    }
+     .pressarticle h4{
+        text-align: center;
     }
 }
 
@@ -1347,7 +1423,8 @@ hr{
    }
 
     .hero h4{
-        font-size: 1em;    
+        font-size: 1em;   
+        text-align: center justify;
     }  
     .historyleft{
         order: 2;
@@ -1385,6 +1462,9 @@ hr{
     .menucolumninner{
         width: 100%;
     }
+     .menucolumninner  h1 {
+        padding: 2em 0 0 0;
+    }
     .carouselparallax{
         min-height: 80vh;
     }
@@ -1420,8 +1500,92 @@ hr{
         display: none;
     }
     .menucolumninner  h1 {
-        padding: 2em 0 0 6em;
+        padding: 2em 0 0 2em;
+        text-align: center;
+    }
+    .menubutton{
+        display: block;
+    }
+    .columnfooter{
+        width: 100%;
+        text-align: center;
+    }
+    .vertical-center{
+        padding-left: 5em;
+    }
+    .ficons{
+        padding-left: 0;
+    }
+    .mapiframe{
+        padding-left: 5em;
+        width: 430px;
+        padding-top: 5em;
+    }
+    .storehours{
+        text-align: justify;
+        padding-left: 3em;
+    }
+    .contact{
+        text-align: justify;
+        padding-left: 3em;
+    }
+     .pressarticle h4{
+        text-align: center;
     }
 }
 
+@media screen and (max-width: 376px) {
+    .columnfooter{
+        width: 100%;
+        text-align: center;
+    }
+    .vertical-center{
+        padding-left: 5em;
+    }
+    .ficons{
+        padding-left: 0;
+    }
+    .mapiframe{
+        padding-left: 5em;
+        width: 380px;
+    }
+    .storehours{
+        text-align: justify;
+        padding-left: 1.8em;
+    }
+    .contact{
+        text-align: justify;
+        padding-left: 1.5em;
+    }
+     .pressarticle h4{
+        text-align: center;
+    }
+}
 
+@media screen and (max-width: 340px) {
+    .columnfooter{
+        width: 100%;
+        text-align: center;
+    }
+    .vertical-center{
+        padding-left: 4em;
+    }
+    .ficons{
+        padding-left: 0;
+    }
+    .mapiframe{
+        padding-left: 2em;
+        width: 380px;
+    }
+    .storehours{
+        text-align: justify;
+        padding-left: 1.5em;
+    }
+    .contact{
+        text-align: justify;
+        padding-left: 1.2em;
+    }
+    .pressarticle h4{
+        text-align: center;
+    }
+}
