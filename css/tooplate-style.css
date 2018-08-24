@@ -562,7 +562,7 @@ h5 {
 
 .aboutparallax {
     background-image: url('../img/visionparallax.jpg');
-    min-height: 50vh; 
+    min-height: 60vh; 
 
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
@@ -594,13 +594,23 @@ h5 {
 .hero{
     position: absolute;
     text-align: center;
-    top: 30%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
 .hero h1{
+    font-family: surgefont;
     font-size: 6em;
+    font-weight: bold;
+    color: white;
+    letter-spacing: 5px;
+}
+
+.hero h2{
+    font-family: surgefont;
+    margin-top: 2em;
+    font-size: 3.5em;
     font-weight: bold;
     color: white;
     letter-spacing: 5px;
@@ -615,11 +625,13 @@ h5 {
 }
 
 .aboutcontent h1{
+    font-family: surgefont;
     color: darkgoldenrod;
     font-weight: bold;
 }
 
 .aboutcontent p {
+    font-family: surgefontlighter;
     margin: 0 3em;
     line-height: 2;
     font-weight: lighter;
@@ -627,6 +639,7 @@ h5 {
     text-align: justify;
     color: #0e1111;
     padding-top: 1.5em;
+    font-size: 1.2em;
 }
 
 .historyleft img{
@@ -664,23 +677,27 @@ h5 {
 
 .whycontent{
     float: left;
-    width: 33.33%;
+    width: 32.2%;
     height: auto;
     text-align: center;
-    margin: 2em 0;
+    margin: 2em .5em;
     padding: 2em 0 2em 0;
     justify-content: center;
     border: 1px solid darkgoldenrod;
-    background-color: rgba(8, 11, 12, .7);
+    background-color: rgba(8, 11, 12, .9);
+    box-shadow: 0 19px 38px rgba(0,0,0,0.7), 0 15px 12px rgba(0,0,0,0.6);
 }
 
 .whycontent h1{
+    font-family: surgefont;
     color: darkgoldenrod;
     font-weight: bold;
     margin-bottom: -.5em;
+    letter-spacing: 2px;
 }
 
 .whycontent p {
+    font-family: surgefontlighter;
     margin: 0 3em;
     line-height: 2;
     font-weight: lighter;
@@ -688,10 +705,11 @@ h5 {
     text-align: justify;
     color: whitesmoke;
     padding-top: .5em;
+    font-size: 1.1em;
 }
 
 .press{
-    min-height: 50vh;
+    min-height: 25vh;
     padding-bottom: 1.5em;
 }
 
@@ -707,7 +725,7 @@ h5 {
     height: auto;
     text-align: center;
     justify-content: center;
-    padding: 4em 5em;
+    padding: 1em 0;
 }
 
 
@@ -729,9 +747,9 @@ h5 {
     margin: 0 3em;
     font-weight: lighter;
     letter-spacing: 2px;
-    text-align: justify;
+    text-align: center;
     color: white;
-    padding-bottom: 2em;
+    padding-bottom: .2em;
 }
 .pressicons{
     font-size: 48px;
@@ -739,21 +757,23 @@ h5 {
 }
 
 .pressarticle{
-    min-height: 30vh;
+    min-height: 20vh;
     
 }
 
 .pressbutton{
-  text-transform: uppercase;
-  font-size: .9em;
-  font-weight: bolder;
-  width: 250px;
-  color: white;
-  padding: 15px;
-  border: 2.5px solid rgb(184, 134, 11);
-  text-decoration: none;
-  position: relative;
-  top:-20px;
+   font-family: surgefontmedium;
+   text-transform: uppercase;
+   font-size: .9em;
+   letter-spacing: 2px;
+   font-weight: bolder;
+   width: 250px;
+   color: white;
+   padding: 15px;
+   border: 2.5px solid rgb(184, 134, 11);
+   text-decoration: none;
+   position: relative;
+   top:-10px; 
     
 }
 .pressbutton:hover{
@@ -778,7 +798,13 @@ h5 {
     
 }
 
+.pressprev{
+    margin-left: -5em;
+}
 
+.pressnext{
+    margin-right: -5em;
+}
 
 /* Instagram */
 
@@ -795,8 +821,7 @@ h5 {
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    min-height: 60vh;
-   
+    min-height: 60vh;  
 }
 .menu-content {
     padding-top: 4em;
@@ -810,6 +835,7 @@ h5 {
 }
 
 .menu-content > h1 {
+    font-family: surgefont;
     color: darkgoldenrod;
     line-height: 1;
     text-transform: uppercase;
@@ -824,17 +850,8 @@ hr{
     background-color: darkgoldenrod;    
 }
 
-
-.menu-content > p {
-    color: #0e1111;
-    line-height: 2;
-    font-size: .55em;
-    text-align: center;
-    padding: 2em 5em 0 5em; 
-    letter-spacing: .2;
-}
-
 .menubutton{
+    font-family: surgefontmedium;
     display: inline-flex;
     justify-content: center;
     cursor: pointer;
@@ -970,6 +987,151 @@ hr{
     text-decoration: none;
 }
 
+/* Play */
+
+.playnavigation{
+    background-image: url("../img/play.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 60vh;  
+}
+
+.playcontainer{
+    min-height: 100vh;
+}
+
+.playheader{
+    font-family: surgefont;
+    text-align: center;
+    color: darkgoldenrod;
+    margin-top: 2em;
+}
+
+.playdesc{
+    font-family: surgefontlighter;
+    font-size: 1.2em;
+    text-align: center;
+    color: #0f1111;
+    padding: 1.5em 4em 3em 4em;
+}
+
+.playcolumn{
+    float: left;
+    width: 33.33%;       
+    text-align: justify;
+    
+}
+
+.card{
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2), 0 6px 6px rgba(0,0,0,0.1);
+}
+
+.card.border-dark.mb-3.mx-auto{
+    max-width: 25rem;
+    height: 20rem;
+}
+
+.card-header{
+    color: darkgoldenrod;
+    font-size: 2em;
+    font-family: surgefont;
+    text-align: center;
+    letter-spacing: 2px;
+    background-color: #0f1111 !important;
+    
+}
+
+.card-title{
+     font-family: surgefontmedium;
+     color: #0f1111;
+     letter-spacing: 2px;
+}
+
+.card-text{
+     font-family: surgefont;
+     font-size: 3em;
+     color: darkgoldenrod;
+     margin-top: 1em;
+     text-align: center;
+     letter-spacing: 2px;
+}
+
+/* Parties */
+
+.partynavigation{
+    background-image: url("../img/parties.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 60vh;  
+}
+
+.partycontainer{
+    min-height: 60vh;
+}
+
+.partyheader{
+    font-family: surgefont;
+    text-align: center;
+    color: darkgoldenrod;
+    margin-top: 2em;
+}
+
+.partydesc{
+    font-family: surgefontlighter;
+    font-size: 1.2em;
+    text-align: center;
+    color: #0f1111;
+    padding: 1.5em 8em 3em 8em;
+}
+
+/* Gallery */
+
+.gallerynavigation{
+    background-image: url("../img/gallery.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 50vh;  
+}
+
+.gallerycontainer{
+    min-height: 60vh;
+}
+.galleryheader{
+    font-family: surgefont;
+    text-align: center;
+    color: darkgoldenrod;
+    margin-top: 2em;
+}
+
+.gallerydesc{
+    font-family: surgefontlighter;
+    font-size: 1.2em;
+    text-align: center;
+    color: #0f1111;
+    padding: 1.5em 8em -1em 8em;
+}
+
+.gallerydesc a{
+     font-family: surgefontmedium;
+     color: darkgoldenrod;
+     text-decoration: none;
+}
+
+.gallerydesc a:hover{
+    color: #0f1111;
+    text-decoration: none;
+}
+
+.gallery{
+    margin-top: -4em !important;
+    padding-top: -4em !important;
+}
 /* footer */
 
 .footer1 {
@@ -998,8 +1160,7 @@ hr{
 
 .columnfooter{
     float: left;
-    width: 20%;    
-    width: 20%;    
+    width: 20%;       
     text-align: left;
     padding: 0;
 }
@@ -1053,8 +1214,8 @@ hr{
 .footertitle{
     font-family: surgefont;
     font-size: 1.6em;
-    color: darkgoldenrod;
-    margin-left: -1em;
+    color: white;
+    margin-left: -.8em;
     padding-top: .5em;
 }
 
@@ -1098,7 +1259,7 @@ hr{
     color: darkgoldenrod;
 }
 
-.mapiframe{
+#map{
     width: 350px;
     height: 270px;
     padding-right: 4em;
@@ -1222,7 +1383,7 @@ hr{
     .ficons{
         padding-left: 0;
     }
-    .mapiframe{
+    #map{
         padding-left: 10em;
         width: 600px;
     }
@@ -1233,6 +1394,13 @@ hr{
     .contact{
         text-align: justify;
         padding-left: 20em;
+    }
+     .playcolumn{
+        width: 100%;
+    }
+     .hero h2{
+    margin-top: -5em;
+    font-size: 2em;
     }
 }
 
@@ -1367,7 +1535,7 @@ hr{
     .ficons{
         padding-left: 0;
     }
-    .mapiframe{
+    #map{
         padding-left: 5em;
         width: 430px;
     }
@@ -1381,6 +1549,20 @@ hr{
     }
      .pressarticle h4{
         text-align: center;
+    }
+     .playcolumn{
+        width: 100%;
+    }
+     .hero h2{
+        margin-top: -5em;
+        font-size: 2em;
+    }
+     .pressprev{
+    margin-left: 0;
+    }
+
+     .pressnext{
+    margin-right: 0;
     }
 }
 
@@ -1407,6 +1589,7 @@ hr{
     margin-left: 0;
     }   
     .aboutcontent{
+        width: 100%;
         width: 100%;
         margin: 2em 0;
     }
@@ -1516,7 +1699,7 @@ hr{
     .ficons{
         padding-left: 0;
     }
-    .mapiframe{
+    #map{
         padding-left: 5em;
         width: 430px;
         padding-top: 5em;
@@ -1532,6 +1715,20 @@ hr{
      .pressarticle h4{
         text-align: center;
     }
+     .playcolumn{
+        width: 100%;
+    }
+     .hero h2{
+        margin-top: -5em;
+        font-size: 2em;
+    }
+     .pressprev{
+    margin-left: 0;
+    }
+
+     .pressnext{
+    margin-right: 0;
+    }
 }
 
 @media screen and (max-width: 376px) {
@@ -1545,7 +1742,7 @@ hr{
     .ficons{
         padding-left: 0;
     }
-    .mapiframe{
+    #map{
         padding-left: 5em;
         width: 380px;
     }
@@ -1560,6 +1757,20 @@ hr{
      .pressarticle h4{
         text-align: center;
     }
+     .playcolumn{
+        width: 100%;
+    }
+     .hero h2{
+       margin-top: -4.5em;
+       font-size: 2em;
+    }
+     .pressprev{
+    margin-left: 0;
+    }
+
+     .pressnext{
+    margin-right: 0;
+    }
 }
 
 @media screen and (max-width: 340px) {
@@ -1569,11 +1780,12 @@ hr{
     }
     .vertical-center{
         padding-left: 4em;
+        padding-left: 4em;
     }
     .ficons{
         padding-left: 0;
     }
-    .mapiframe{
+    #map{
         padding-left: 2em;
         width: 380px;
     }
@@ -1588,4 +1800,19 @@ hr{
     .pressarticle h4{
         text-align: center;
     }
+    .playcolumn{
+        width: 100%;
+    }
+    .hero h2{
+    margin-top: -4em;
+    font-size: 1.6em;
+    }
+    .pressprev{
+    margin-left: 0;
+    }
+
+    .pressnext{
+    margin-right: 0;
+    }
+
 }
