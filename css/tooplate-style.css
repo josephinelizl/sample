@@ -677,7 +677,7 @@ h5 {
 
 .whycontent{
     float: left;
-    width: 32.2%;
+    width: 31%;
     height: auto;
     text-align: center;
     margin: 2em .5em;
@@ -688,6 +688,9 @@ h5 {
     box-shadow: 0 19px 38px rgba(0,0,0,0.7), 0 15px 12px rgba(0,0,0,0.6);
 }
 
+.whycontentleft{
+    margin-left: 2em;
+}
 .whycontent h1{
     font-family: surgefont;
     color: darkgoldenrod;
@@ -1260,10 +1263,11 @@ hr{
 }
 
 #map{
-    width: 350px;
+    width: 300px;
     height: 270px;
     padding-right: 4em;
     padding-top: 1em;
+    margin-right: 2em;
     border-style: none;
     -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
@@ -1401,6 +1405,9 @@ hr{
      .hero h2{
     margin-top: -5em;
     font-size: 2em;
+    }
+    .whycontentleft{
+    margin-left: .5em;
     }
 }
 
@@ -1563,6 +1570,9 @@ hr{
 
      .pressnext{
     margin-right: 0;
+    }
+    .whycontentleft{
+    margin-left: .5em;
     }
 }
 
@@ -1729,6 +1739,9 @@ hr{
      .pressnext{
     margin-right: 0;
     }
+    .whycontentleft{
+    margin-left: .5em;
+    }
 }
 
 @media screen and (max-width: 376px) {
@@ -1770,6 +1783,9 @@ hr{
 
      .pressnext{
     margin-right: 0;
+    }
+    .whycontentleft{
+    margin-left: .5em;
     }
 }
 
@@ -1814,5 +1830,7 @@ hr{
     .pressnext{
     margin-right: 0;
     }
-
+    .whycontentleft{
+    margin-left: .5em;
+    }
 }
