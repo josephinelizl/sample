@@ -196,8 +196,7 @@
         });
 
 
-
-     // When the window has finished loading create our google map below
+ // When the window has finished loading create our google map below
       google.maps.event.addDomListener(window, 'load', init);
         
     function init() {
@@ -206,14 +205,17 @@
      var mapOptions = {
     // How zoomed in you want the map to start at (always required)
      zoom: 15,
-
+     disableDefaultUI: true,
+ 
      // The latitude and longitude to center the map (always required)
          center: new google.maps.LatLng(41.960850, -87.709930), 
          
           // How you would like to style the map. 
          // This is where you would paste any style found on Snazzy Maps.
- styles: [{ "stylers": [ {  "visibility": "on" }]},{ "elementType": "geometry","stylers": [ {"color": "#212121"}]},{ "elementType": "labels.icon", "stylers": [ {"visibility": "on" }]},{"elementType": "labels.text.fill","stylers": [ {"color": "#757575" }]},{"elementType": "labels.text.stroke","stylers": [ {"color": "#212121" }]},{ "featureType": "administrative","elementType": "geometry","stylers": [ {"color": "#757575"} ]},{"featureType": "administrative.country","elementType": "labels.text.fill", "stylers": [{ "color": "#9e9e9e"}]},{ "featureType": "administrative.land_parcel","stylers": [ {"visibility": "off"}]},{"featureType": "administrative.locality", "elementType": "labels.text.fill","stylers": [{"color": "#bdbdbd"}]},{ "featureType": "poi","elementType": "labels.text.fill","stylers": [ {"color": "#757575" }]},{ "featureType": "poi.park", "elementType": "geometry","stylers": [ { "color": "#181818" }]},
-  {  "featureType": "poi.park", "elementType": "labels.text.fill", "stylers": [{ "color": "#616161"}]},{"featureType": "poi.park","elementType": "labels.text.stroke","stylers": [{ "color": "#1b1b1b"} ]},{"featureType": "road", "elementType": "geometry.fill", "stylers": [ { "color": "#2c2c2c" }]},{"featureType": "road","elementType": "labels.text.fill","stylers": [{ "color": "#8a8a8a"}]},{"featureType": "road.arterial","elementType": "geometry","stylers": [{"color": "#373737"} ]}, {"featureType": "road.highway", "elementType": "geometry","stylers": [ { "color": "#3c3c3c" }]},{ "featureType": "road.highway.controlled_access", "elementType": "geometry", "stylers": [{ "color": "#4e4e4e" }]},{"featureType": "road.local","elementType": "labels.text.fill","stylers": [{ "color": "#616161" }]},{"featureType": "transit","elementType": "labels.text.fill","stylers": [{"color": "#757575"}]},{ "featureType": "water","elementType": "geometry","stylers": [ { "color": "#000000" } ]},{ "featureType": "water","elementType": "labels.text.fill","stylers": [ { "color": "#3d3d3d"} ]}] };
+  styles: [{"featureType":"administrative","elementType":"labels","stylers":[{"visibility":"simplified"},{"color":"#fad21e"}]},{"featureType":"landscape","elementType":"all","stylers":[{"color":"#1e303d"}]},{"featureType":"poi","elementType":"all","stylers":[{"color":"#fad21e"},{"visibility":"off"}]},{"featureType":"poi","elementType":"labels.text.stroke","stylers":[{"color":"#1e303d"},{"visibility":"off"}]},{"featureType":"poi","elementType":"labels.icon","stylers":[{"color":"#f0c514"},{"visibility":"off"}]},{"featureType":"poi.park","elementType":"all","stylers":[{"color":"#1e303d"}]},{"featureType":"road","elementType":"all","stylers":[{"color":"#1e303d"}]},{"featureType":"road","elementType":"labels.text.fill","stylers":[{"color":"#94a5a6"}]},{"featureType":"road.local","elementType":"geometry","stylers":[{"visibility":"on"}]},{"featureType":"road.local","elementType":"geometry.fill","stylers":[{"visibility":"on"},{"color":"#0b1926"}]},{"featureType":"transit","elementType":"all","stylers":[{"color":"#182731"},{"visibility":"simplified"}]},{"featureType":"transit","elementType":"labels.text.fill","stylers":[{"color":"#e77e24"},{"visibility":"off"}]},{"featureType":"water","elementType":"all","stylers":[{"color":"#0e171d"}]}]
+                };
+
+
 
      // Get the HTML DOM element that will contain your map 
      // We are using a div with id="map" seen below in the <body>
@@ -231,8 +233,7 @@
         });  
         
     google.maps.event.addListener(marker, 'click', function() {
-      window.location.href = marker.url;
+      window.open(marker.url, '_blank');
     });  
-     }
+    }
 
-  

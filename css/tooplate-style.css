@@ -5,7 +5,6 @@ Template 2096 Individual
 http://www.tooplate.com/view/2096-individual
 
 */
-
 @font-face{
     font-family: surgefont;
     src: url(../font-awesome-4.5.0/fonts/TTF/ATCArquette-Bold.ttf) format('truetype');
@@ -74,7 +73,7 @@ body {
 
 .parallax2 {
     background-image: url('../img/happyhour.jpg');
-    min-height: 40vh; 
+    min-height: 30vh; 
 
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
@@ -490,15 +489,11 @@ h5 {
     background-size: cover;   
 }
 
-.happycontent{
-    margin-top: -20px;
-    letter-spacing: 3px;
-}
+
 .happycontent > h2{
     color: white;
     text-align:  center;
-    padding-top: 1em;
-    margin-bottom: 1em;
+    padding: 1em 0 .5em 0;
     font-size: 3.5em;
     font-weight: bolder;
 }
@@ -509,8 +504,9 @@ h5 {
     color: white;
     font-size: 2em;
     opacity: 0;
-    margin-top: .5em;
+    padding: .4em;
 }
+
 
 .center-content {
   font-family: surgefont;
@@ -591,7 +587,7 @@ h5 {
 
 .whypressparallax h1{
     font-family: surgefont;
-    color: #fad21e;
+    color: white;
     text-align: center;
     padding-top: 1.4em;
 }
@@ -1017,6 +1013,7 @@ hr{
     min-height: 60vh;  
 }
 
+
 .playcontainer{
     min-height: 100vh;
 }
@@ -1077,7 +1074,7 @@ hr{
      letter-spacing: 2px;
 }
 
-/* Parties */
+ /* Parties */
 
 .partynavigation{
     background-image: url("../img/parties.jpg");
@@ -1134,6 +1131,10 @@ hr{
 .col-md-6{
     margin-bottom: 1em;
 }
+
+
+
+
 /* Gallery */
 
 .gallerynavigation{
@@ -1197,7 +1198,6 @@ hr{
     height: auto;
     width: 100%;
     overflow: hidden;
-    padding: 0 5em 0 0;
 }
 
 .footercontent{
@@ -1218,7 +1218,7 @@ hr{
 }
 
 .ficons{
-    padding-left: 6em;    
+    padding-left: 4.5em;    
 }
 
 .one{
@@ -1253,7 +1253,7 @@ hr{
 }
 
 .footericons1:hover{
-    color: white;
+    color: #fad21e;
     text-decoration: none;
 }
 
@@ -1307,19 +1307,52 @@ hr{
 }
 
 #map{
-    width: 270px;
-    height: 250px;
+    width: 250px;
+    height: 240px;
     padding-top: 1em;
     border-style: none;
-    -webkit-filter: grayscale(100%);
-    filter: grayscale(100%);
 }
 
 .vertical-center{
     padding-top: 5em;
 }
 /* media */
-
+@media screen and (max-width: 1250px){
+    .columnfooter{
+        width: 50%;
+    }
+    .columnfooter:nth-child(5){
+        width: 100% !important;
+    }
+    
+    #map{
+        display: block;
+        margin: 4em auto 0 auto;
+        width: 100%;
+    }
+    
+    .ficons{
+       text-align: center;
+       padding-left: 0;
+    }
+    
+    .footertitle{
+        text-align: center;
+    }
+    
+    .storehours{
+        text-align: center;
+/*        padding-left: 20em;*/
+    }
+    .contact{
+        text-align: center;
+/*        padding-left: 20em;*/
+    }
+    
+    .vertical-center{
+        padding-top: .5em;
+    }
+}
 @media screen and (max-width: 991px) {
 	.tm-img-container {
 		max-width: 490px;
@@ -1358,7 +1391,7 @@ hr{
         height: 80px;
     }
     .footercontent{
-    padding: 3.125em 0em;
+    padding: 1em 0;
     }
     .email{
         text-align: center;
@@ -1422,17 +1455,23 @@ hr{
         width: 100%;
         text-align: center;
     }
-    .vertical-center{
-        padding-left: 5em;
-    }
+
     .ficons{
         padding-left: 0;
     }
     #map{
         display: block;
-        margin: 0 auto;
-        width: 350px;
-        padding-right: 0 !important;
+        margin: 4em auto 0 auto;
+/*        width: 350px;*/
+        width: 100%;
+    }
+    
+    .footer{
+        padding-left: 0 !important;
+    }
+    
+    .vertical-center{
+        padding-top: 1em !important;
     }
     
     .storehours{
@@ -1522,7 +1561,7 @@ hr{
         height: 80px;
     }
     .footercontent{
-    padding: 3.125em 0em;
+    padding: 1em 0;
     }
     .email{
         text-align: center;
@@ -1579,18 +1618,15 @@ hr{
         width: 100%;
         text-align: center;
     }
-    .vertical-center{
-        padding-left: 5em;
-    }
+
     .ficons{
         padding-left: 0;
     }
     #map{ 
         display: block;
-        margin: 0 auto;
-        width: 430px;
-        padding-right: 0 !important;
-        margin-right: 0 !important;
+        margin: 4em auto 0 auto;
+/*        width: 430px;*/
+        width: 100%;
     }
     .storehours{
         text-align: center;
@@ -1600,6 +1636,11 @@ hr{
         text-align: center;
 /*        padding-left: 2.5em;*/
     }
+    
+     .vertical-center{
+        padding-top: 1em !important;
+    }
+    
      .pressarticle h4{
         text-align: center;
     }
@@ -1686,8 +1727,13 @@ hr{
         height: 80px;
     }
     .footercontent{
-    padding: 3.125em 0em;
+    padding: 1em 0;
     }
+    
+     .vertical-center{
+        padding-top: 1em !important;
+    }
+    
     .email{
         text-align: center;
         padding-right: 0;
@@ -1748,19 +1794,21 @@ hr{
         width: 100%;
         text-align: center;
     }
-    .vertical-center{
-        padding-left: 5em;
-    }
+
     .ficons{
         padding-left: 0;
     }
     #map{
         display: block;
-        margin: 0 auto;
-        width: 430px;
-        padding-right: 0 !important;
-        margin-right: 0 !important;
+        margin: 4em auto 0 auto;
+/*        width: 430px;*/
+        width: 100%;
     }
+    
+     .vertical-center{
+        padding-top: 1em !important;
+    }
+    
     .storehours{
         text-align: center;
 /*        padding-left: 3em;*/
@@ -1796,19 +1844,21 @@ hr{
         width: 100%;
         text-align: center;
     }
-    .vertical-center{
-        padding-left: 5em;
-    }
+  
     .ficons{
         padding-left: 0;
     }
     #map{
         display: block;
-        margin: 0 auto;
-        width: 380px;
-        padding-right: 0 !important;
-        margin-right: 0 !important;
+        margin: 2em auto 0 auto;
+/*        width: 380px;*/
+        width: 100%;
     }
+    
+     .vertical-center{
+        padding-top: 1em !important;
+    }
+    
     .storehours{
         text-align: center;
 /*        padding-left: 1.8em;*/
@@ -1844,24 +1894,25 @@ hr{
         width: 100%;
         text-align: center;
     }
-    .vertical-center{
-        padding-left: 4em;
-        padding-left: 4em;
-    }
+   
     .ficons{
         padding-left: 0;
     }
     #map{
         display: block;
-        margin: 0 auto;
-        width: 335px;
-        padding-right: 0 !important;
-        margin-right: 0 !important;
+        margin: 2em auto 0 auto;
+/*        width: 335px;*/
+        width: 100%;
     }
     .storehours{
         text-align: center;
 /*        padding-left: 1.5em;*/
     }
+    
+     .vertical-center{
+        padding-top: 1em !important;
+    }
+    
     .contact{
         text-align: center;
 /*        padding-left: 1.2em;*/
