@@ -62,7 +62,7 @@ body {
 }
 
 .parallax1 {
-    background-image: url('../img/1234.jpg');
+    background-image: url('../img/4321.jpg');
     min-height: 10vh; 
 
     /* Create the parallax scrolling effect */
@@ -146,7 +146,7 @@ a:focus {
 }
 
 .mainpageicons > a:hover{
-    color: darkgoldenrod;
+    color: #fad21e;
 }
 .fa-instagram{
     margin-left: 25px;
@@ -348,7 +348,7 @@ h5 {
     color:white 
 }
 .activenavigation{
-    border-bottom: 4px solid darkgoldenrod;
+    border-bottom: 4px solid #fad21e;
     padding-bottom: 2px;
 }
 
@@ -358,7 +358,7 @@ h5 {
 
 
 .nav-item > .nav-link:hover{
-    color: darkgoldenrod;
+    color: #fad21e;
 }
 
 .nav-item{
@@ -383,7 +383,7 @@ h5 {
 
 .try{
     width: 100%;
-    background-color: black;
+    background-color: #0b1926;
     -webkit-transition: : all .5s;
     -moz-transition: all .5s;
     -ms-transition: all .5s;
@@ -398,8 +398,8 @@ h5 {
 
 .surgelogo{
     position: absolute;
-    width: 50%;
-    height: 50%;
+    max-width: 70%;
+    max-height: 70%;
     margin: auto;
     top: 0;
     bottom: 0;
@@ -429,6 +429,13 @@ h5 {
 .carousel-fade .carousel-item.active{
   -webkit-transform: none !impornant;
  transform: none !important ;
+}
+
+.carousel-control-prev{
+ z-index: 2;
+}
+.carousel-control-next{
+    z-index: 2;
 }
 /* about, play, leagues and party */
 
@@ -491,18 +498,18 @@ h5 {
     color: white;
     text-align:  center;
     padding-top: 1em;
+    margin-bottom: 1em;
     font-size: 3.5em;
     font-weight: bolder;
 }
-.happyrow{
+
+.happydesc{
     font-family: surgefontmedium;
-    width: 50%;
     text-align: center;
-    margin-top: 3em;
     color: white;
     font-size: 2em;
-    font-weight: bolder;
     opacity: 0;
+    margin-top: .5em;
 }
 
 .center-content {
@@ -516,7 +523,7 @@ h5 {
   color: white;
   line-height: 1; 
   font-size: 1.5em;
-  text-shadow: 2px 1px #000000;
+/*  text-shadow: 2px 1px #000000;*/
   font-weight: normal;
   opacity: 0;
 }
@@ -548,12 +555,12 @@ h5 {
   width: 250px;
   color: white;
   padding: 15px;
-  border: 5px solid rgb(184, 134, 11);
+  border: 5px solid rgb(250, 210, 30);
   text-decoration: none;
 }
 .button:hover{
-    background-color: rgba(184, 134, 11, .9);
-    border-color: rgb(184, 134, 11);
+    background-color: rgba(250, 210, 30, .9);
+    border-color: rgb(250, 210, 30);
     color: white;
     text-decoration: none;
 }
@@ -582,12 +589,19 @@ h5 {
     background-size: cover;
 }
 
+.whypressparallax h1{
+    font-family: surgefont;
+    color: #fad21e;
+    text-align: center;
+    padding-top: 1.4em;
+}
+
 .aboutcontent{
     float: left;
     width: 50%;
     height: auto;
     text-align: center;
-    margin: 4em 0;
+    margin: 3em 0;
     justify-content: center;
 }
 
@@ -626,7 +640,7 @@ h5 {
 
 .aboutcontent h1{
     font-family: surgefont;
-    color: darkgoldenrod;
+    color: #fad21e;
     font-weight: bold;
 }
 
@@ -638,8 +652,8 @@ h5 {
     letter-spacing: 2px;
     text-align: justify;
     color: #0e1111;
-    padding-top: 1.5em;
-    font-size: 1.2em;
+    padding-top: 1em;
+    font-size: .9em;
 }
 
 .historyleft img{
@@ -647,7 +661,7 @@ h5 {
     justify-content: left;
     width: 80%;
     height: 80%;
-    border: 1px dashed darkgoldenrod;
+    border: 1px dashed #fad21e;
     padding: 1em;
 }
 
@@ -683,20 +697,21 @@ h5 {
     margin: 2em .5em;
     padding: 2em 0 2em 0;
     justify-content: center;
-    border: 1px solid darkgoldenrod;
+    border: 1px solid #fad21e;
     background-color: rgba(8, 11, 12, .9);
-    box-shadow: 0 19px 38px rgba(0,0,0,0.7), 0 15px 12px rgba(0,0,0,0.6);
+    box-shadow: 0 5px 25px rgba(0,0,0,0.4), 0 7px 6px rgba(0,0,0,0.3);
 }
 
 .whycontentleft{
     margin-left: 2em;
 }
 .whycontent h1{
-    font-family: surgefont;
-    color: darkgoldenrod;
+    font-family: surgefontmedium;
+    color: white;
     font-weight: bold;
     margin-bottom: -.5em;
     letter-spacing: 2px;
+    font-size: 2em;
 }
 
 .whycontent p {
@@ -708,7 +723,7 @@ h5 {
     text-align: justify;
     color: whitesmoke;
     padding-top: .5em;
-    font-size: 1.1em;
+    font-size: .9em;
 }
 
 .press{
@@ -729,6 +744,7 @@ h5 {
     text-align: center;
     justify-content: center;
     padding: 1em 0;
+    background-color: black;
 }
 
 
@@ -738,11 +754,11 @@ h5 {
 
 
 .pressarticle h2{
-    font-family: surgefont;
-    color: darkgoldenrod;
+    font-family: surgefontmedium;
+    color: white;
     font-weight: bold;
     text-align: center;
-    letter-spacing: 2px;
+    letter-spacing: 4px;
 }
 
 .pressarticle h4 {
@@ -773,31 +789,31 @@ h5 {
    width: 250px;
    color: white;
    padding: 15px;
-   border: 2.5px solid rgb(184, 134, 11);
+   border: 2.5px solid rgb(250, 210, 30);
    text-decoration: none;
    position: relative;
    top:-10px; 
     
 }
 .pressbutton:hover{
-    background-color: rgba(184, 134, 11, .9);
-    border-color: rgb(184, 134, 11);
+    background-color: rgba(250, 210, 30, .9);
+    border-color: rgb(250, 210, 30);
     color: white;
     text-decoration: none;
 }
 
 .presscolorone{
-    background-color: rgba(28, 42, 45, .6);
+    background-color: rgb(28, 42, 45);
    
 }
 
 .presscolortwo{
-    background-color: rgba(36, 48, 53, .6) ;
+    background-color: rgb(36, 48, 53) ;
 }
 
 
 .presscolorthree{
-    background-color: rgba(50, 55, 58, .6) ;
+    background-color: rgb(50, 55, 58) ;
     
 }
 
@@ -839,10 +855,10 @@ h5 {
 
 .menu-content > h1 {
     font-family: surgefont;
-    color: darkgoldenrod;
+    color: #fad21e;
     line-height: 1;
     text-transform: uppercase;
-    font-size: 2em;
+   
     margin-bottom: 0;
     font-weight: bold;
     text-align: center;
@@ -850,7 +866,7 @@ h5 {
 
 hr{
     width: 50%;
-    background-color: darkgoldenrod;    
+    background-color: #fad21e;    
 }
 
 .menubutton{
@@ -868,15 +884,15 @@ hr{
   
 }
 .menubutton:hover{
-    color: darkgoldenrod;
+    color: #fad21e;
     text-decoration: none;
-    border-bottom: 2px solid darkgoldenrod; 
+    border-bottom: 2px solid #fad21e; 
     padding-bottom: .5em;
 }
 
 .activebuttons{
-    color: darkgoldenrod !important;
-    border-bottom: 2px solid darkgoldenrod;
+    color: #fad21e !important;
+    border-bottom: 2px solid #fad21e;
     padding-bottom: .5em;
 }
 .menulist{
@@ -925,7 +941,7 @@ hr{
 }
 .menucolumninner  h2 {
     font-size: 1.2em;
-    color: darkgoldenrod;
+    color: #fad21e;
     text-shadow: none;
     text-align: center;
     font-weight: bold;
@@ -1008,7 +1024,7 @@ hr{
 .playheader{
     font-family: surgefont;
     text-align: center;
-    color: darkgoldenrod;
+    color: #fad21e;
     margin-top: 2em;
 }
 
@@ -1037,7 +1053,7 @@ hr{
 }
 
 .card-header{
-    color: darkgoldenrod;
+    color: #fad21e;
     font-size: 2em;
     font-family: surgefont;
     text-align: center;
@@ -1055,7 +1071,7 @@ hr{
 .card-text{
      font-family: surgefont;
      font-size: 3em;
-     color: darkgoldenrod;
+     color: #fad21e;
      margin-top: 1em;
      text-align: center;
      letter-spacing: 2px;
@@ -1073,13 +1089,13 @@ hr{
 }
 
 .partycontainer{
-    min-height: 60vh;
+    min-height: 80vh;
 }
 
 .partyheader{
     font-family: surgefont;
     text-align: center;
-    color: darkgoldenrod;
+    color: #fad21e;
     margin-top: 2em;
 }
 
@@ -1088,9 +1104,36 @@ hr{
     font-size: 1.2em;
     text-align: center;
     color: #0f1111;
-    padding: 1.5em 8em 3em 8em;
+    padding: .5em 8em 3em 8em;
 }
 
+.partycontent{
+    margin: 0 auto;
+    width: 800px;
+}
+
+.partycontent textarea{
+    margin-bottom: 2em;
+}
+
+.partycontent a{
+    font-family: surgefontmedium;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: bolder;
+    letter-spacing: 5px;
+    color: #0e1111;
+    text-decoration: none;
+    position: relative;
+    margin: 0 auto;
+    width: 150px;
+    left: 40%;
+}
+
+
+.col-md-6{
+    margin-bottom: 1em;
+}
 /* Gallery */
 
 .gallerynavigation{
@@ -1108,7 +1151,7 @@ hr{
 .galleryheader{
     font-family: surgefont;
     text-align: center;
-    color: darkgoldenrod;
+    color: #fad21e;
     margin-top: 2em;
 }
 
@@ -1122,7 +1165,7 @@ hr{
 
 .gallerydesc a{
      font-family: surgefontmedium;
-     color: darkgoldenrod;
+     color: #fad21e;
      text-decoration: none;
 }
 
@@ -1139,7 +1182,7 @@ hr{
 
 .footer1 {
     font-family: surgefontlighter;
-	background-color: black;
+	background-color: #0b1926;
     height: auto;
     position: fixed;
     left: 0;
@@ -1148,7 +1191,7 @@ hr{
     z-index: 1;
 }
 .footer {
-	background-color: black;
+	background-color: #0b1926;
     left: 0;
     bottom: 0;
     height: auto;
@@ -1190,9 +1233,10 @@ hr{
 }
 
 .footericons1{
-    font-size: 45px;
+    margin-top: .1em;
+    font-size: 35px;
     display: inline-block;
-    color: darkgoldenrod;
+    color: gray;
 }
 
 .ig {
@@ -1204,7 +1248,7 @@ hr{
 }
 
 .footericons:hover{
-    color: darkgoldenrod;
+    color: #fad21e;
     text-decoration: none;
 }
 
@@ -1216,7 +1260,7 @@ hr{
 
 .footertitle{
     font-family: surgefont;
-    font-size: 1.6em;
+    font-size: 1.4em;
     color: white;
     margin-left: -.8em;
     padding-top: .5em;
@@ -1238,18 +1282,18 @@ hr{
 
 .email > a:hover{
     text-decoration: none;
-    color: darkgoldenrod;    
+    color: #fad21e;    
 }
 
 
 .storehours > h6 {
     color: rgba(255,255,255, 0.8);
-    font-size: 1.2em;
+    font-size: 1em;
 }
 
 .contact > h6 {
     color: rgba(255,255,255, 0.8);
-    font-size:  1.2em;
+    font-size:  1em;
     
 }
 
@@ -1259,15 +1303,13 @@ hr{
 
 .contact > h6 > a:hover{
     text-decoration: none;
-    color: darkgoldenrod;
+    color: #fad21e;
 }
 
 #map{
-    width: 300px;
-    height: 270px;
-    padding-right: 4em;
+    width: 270px;
+    height: 250px;
     padding-top: 1em;
-    margin-right: 2em;
     border-style: none;
     -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
@@ -1289,8 +1331,10 @@ hr{
 	}
     
       .surgelogo{
+/*
         width: 80%;
         height: 30%;
+*/
         top: -15% !important;
     }
 
@@ -1348,9 +1392,6 @@ hr{
      .footericons1{
         display: inline-block;
     }
-     .happyrow{
-        padding: 1em;
-    }
     .whycontent{
         width: 100%;
     }
@@ -1388,16 +1429,19 @@ hr{
         padding-left: 0;
     }
     #map{
-        padding-left: 10em;
-        width: 600px;
+        display: block;
+        margin: 0 auto;
+        width: 350px;
+        padding-right: 0 !important;
     }
+    
     .storehours{
-        text-align: justify;
-        padding-left: 20em;
+        text-align: center;
+/*        padding-left: 20em;*/
     }
     .contact{
-        text-align: justify;
-        padding-left: 20em;
+        text-align: center;
+/*        padding-left: 20em;*/
     }
      .playcolumn{
         width: 100%;
@@ -1432,11 +1476,13 @@ hr{
         width: 100%;
     }
     .navbar{
-        background-color: black;
+        background-color: #0b1926;
     }
      .surgelogo{
+/*
         width: 80%;
         height: 30%;
+*/
         top: -15% !important;
     }
 
@@ -1503,9 +1549,6 @@ hr{
      .footericons1{
         display: inline-block;
     }
-    .happyrow{
-        padding: 1em;
-    }
     .whycontent{
         width: 100%;
     }
@@ -1542,17 +1585,20 @@ hr{
     .ficons{
         padding-left: 0;
     }
-    #map{
-        padding-left: 5em;
+    #map{ 
+        display: block;
+        margin: 0 auto;
         width: 430px;
+        padding-right: 0 !important;
+        margin-right: 0 !important;
     }
     .storehours{
-        text-align: justify;
-        padding-left: 2.5em;
+        text-align: center;
+/*        padding-left: 2.5em;*/
     }
     .contact{
-        text-align: justify;
-        padding-left: 2.5em;
+        text-align: center;
+/*        padding-left: 2.5em;*/
     }
      .pressarticle h4{
         text-align: center;
@@ -1582,8 +1628,10 @@ hr{
         width: 100%;
     }
      .surgelogo{
+/*
         width: 80%;
         height: 30%;
+*/
         top: -15% !important;
     }
 
@@ -1670,9 +1718,6 @@ hr{
     .footericons1{
         display: inline-block;
     }
-     .happyrow{
-        padding: 1em;
-    }
     .whycontent{
         width: 100%;
     }
@@ -1710,17 +1755,19 @@ hr{
         padding-left: 0;
     }
     #map{
-        padding-left: 5em;
+        display: block;
+        margin: 0 auto;
         width: 430px;
-        padding-top: 5em;
+        padding-right: 0 !important;
+        margin-right: 0 !important;
     }
     .storehours{
-        text-align: justify;
-        padding-left: 3em;
+        text-align: center;
+/*        padding-left: 3em;*/
     }
     .contact{
-        text-align: justify;
-        padding-left: 3em;
+        text-align: center;
+/*        padding-left: 3em;*/
     }
      .pressarticle h4{
         text-align: center;
@@ -1744,7 +1791,7 @@ hr{
     }
 }
 
-@media screen and (max-width: 376px) {
+@media screen and (max-width: 384px) {
     .columnfooter{
         width: 100%;
         text-align: center;
@@ -1756,16 +1803,19 @@ hr{
         padding-left: 0;
     }
     #map{
-        padding-left: 5em;
+        display: block;
+        margin: 0 auto;
         width: 380px;
+        padding-right: 0 !important;
+        margin-right: 0 !important;
     }
     .storehours{
-        text-align: justify;
-        padding-left: 1.8em;
+        text-align: center;
+/*        padding-left: 1.8em;*/
     }
     .contact{
-        text-align: justify;
-        padding-left: 1.5em;
+        text-align: center;
+/*        padding-left: 1.5em;*/
     }
      .pressarticle h4{
         text-align: center;
@@ -1802,16 +1852,19 @@ hr{
         padding-left: 0;
     }
     #map{
-        padding-left: 2em;
-        width: 380px;
+        display: block;
+        margin: 0 auto;
+        width: 335px;
+        padding-right: 0 !important;
+        margin-right: 0 !important;
     }
     .storehours{
-        text-align: justify;
-        padding-left: 1.5em;
+        text-align: center;
+/*        padding-left: 1.5em;*/
     }
     .contact{
-        text-align: justify;
-        padding-left: 1.2em;
+        text-align: center;
+/*        padding-left: 1.2em;*/
     }
     .pressarticle h4{
         text-align: center;

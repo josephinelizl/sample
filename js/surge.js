@@ -123,7 +123,7 @@
             $(window).scroll( function(){
 
                 /* Check the location of each desired element */
-                $('.happyrow').each( function(i){
+                $('.happydesc').each( function(i){
 
                     var bottom_of_object = $(this).offset().top + $(this).outerHeight();
                     var bottom_of_window = $(window).scrollTop() + $(window).height();
@@ -208,8 +208,8 @@
      zoom: 15,
 
      // The latitude and longitude to center the map (always required)
-         center: new google.maps.LatLng(41.960850, -87.709930), // New York
-
+         center: new google.maps.LatLng(41.960850, -87.709930), 
+         
           // How you would like to style the map. 
          // This is where you would paste any style found on Snazzy Maps.
  styles: [{ "stylers": [ {  "visibility": "on" }]},{ "elementType": "geometry","stylers": [ {"color": "#212121"}]},{ "elementType": "labels.icon", "stylers": [ {"visibility": "on" }]},{"elementType": "labels.text.fill","stylers": [ {"color": "#757575" }]},{"elementType": "labels.text.stroke","stylers": [ {"color": "#212121" }]},{ "featureType": "administrative","elementType": "geometry","stylers": [ {"color": "#757575"} ]},{"featureType": "administrative.country","elementType": "labels.text.fill", "stylers": [{ "color": "#9e9e9e"}]},{ "featureType": "administrative.land_parcel","stylers": [ {"visibility": "off"}]},{"featureType": "administrative.locality", "elementType": "labels.text.fill","stylers": [{"color": "#bdbdbd"}]},{ "featureType": "poi","elementType": "labels.text.fill","stylers": [ {"color": "#757575" }]},{ "featureType": "poi.park", "elementType": "geometry","stylers": [ { "color": "#181818" }]},
@@ -226,8 +226,13 @@
     var marker = new google.maps.Marker({
     position: new google.maps.LatLng(41.960850, -87.709930),
     map: map,
+    url: 'http://goo.gl/maps/YcsD1SwwpuN2',
     title: 'SURGE'
-        });
+        });  
+        
+    google.maps.event.addListener(marker, 'click', function() {
+      window.location.href = marker.url;
+    });  
      }
 
-    
+  
