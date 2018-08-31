@@ -208,7 +208,7 @@
      disableDefaultUI: true,
  
      // The latitude and longitude to center the map (always required)
-         center: new google.maps.LatLng(41.960850, -87.709930), 
+         center: new google.maps.LatLng(41.9611785, -87.7100965), 
          
           // How you would like to style the map. 
          // This is where you would paste any style found on Snazzy Maps.
@@ -226,9 +226,9 @@
 
     // Let's also add a marker while we're at it
     var marker = new google.maps.Marker({
-    position: new google.maps.LatLng(41.960850, -87.709930),
+    position: new google.maps.LatLng(41.9611785, -87.7100965),
     map: map,
-    url: 'http://goo.gl/maps/YcsD1SwwpuN2',
+    url: 'https://goo.gl/maps/UWSMZP41L1q',
     title: 'SURGE'
         });  
         

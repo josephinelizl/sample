@@ -344,7 +344,7 @@ h5 {
 .toggleicon{
     font-size:25px;
     margin-top: 4px;
-    color:white 
+    color: white;
 }
 .activenavigation{
     border-bottom: 4px solid #fad21e;
@@ -687,12 +687,11 @@ h5 {
 
 .whycontent{
     float: left;
-    width: 31%;
+    width: 30.8%;
     height: auto;
     text-align: center;
     margin: 2em .5em;
-    padding: 2em 0 2em 0;
-    justify-content: center;
+    padding: 2em 0;
     border: 1px solid #fad21e;
     background-color: rgba(8, 11, 12, .9);
     box-shadow: 0 5px 25px rgba(0,0,0,0.4), 0 7px 6px rgba(0,0,0,0.3);
@@ -1089,19 +1088,17 @@ hr{
     min-height: 80vh;
 }
 
-.partyheader{
-    font-family: surgefont;
-    text-align: center;
-    color: #fad21e;
-    margin-top: 2em;
+.partyheromobile h1{
+    display: none;
 }
 
 .partydesc{
+    margin-top: 2em;
     font-family: surgefontlighter;
     font-size: 1.2em;
     text-align: center;
     color: #0f1111;
-    padding: .5em 8em 3em 8em;
+    padding: .5em 8em .5em 8em;
 }
 
 .partycontent{
@@ -1131,8 +1128,6 @@ hr{
 .col-md-6{
     margin-bottom: 1em;
 }
-
-
 
 
 /* Gallery */
@@ -1492,6 +1487,13 @@ hr{
     .whycontentleft{
     margin-left: .5em;
     }
+      .playhero {
+      top: 40%;
+      left: 50%;
+    }
+     .partydesc{
+      padding: 0;
+    }
 }
 
 @media screen and (max-width: 767px) {
@@ -1660,6 +1662,16 @@ hr{
     }
     .whycontentleft{
     margin-left: .5em;
+    }
+         .playhero {
+      top: 40%;
+      left: 50%;
+    }
+     .playhero h1{
+      font-size: 3em;
+    } 
+     .partydesc{
+      padding: 0;
     }
 }
 
@@ -1837,6 +1849,16 @@ hr{
     .whycontentleft{
     margin-left: .5em;
     }
+     .playhero {
+      top: 40%;
+      left: 50%;
+    }
+     .playhero h1{
+      font-size: 2.2em;
+    } 
+     .partydesc{
+      padding: 0;
+    }
 }
 
 @media screen and (max-width: 384px) {
@@ -1878,14 +1900,24 @@ hr{
        font-size: 2em;
     }
      .pressprev{
-    margin-left: 0;
+      margin-left: 0;
     }
 
      .pressnext{
-    margin-right: 0;
+      margin-right: 0;
     }
-    .whycontentleft{
-    margin-left: .5em;
+     .whycontentleft{
+      margin-left: .5em;
+    }
+     .playhero {
+      top: 40%;
+      left: 50%;
+    }
+     .playhero h1{
+      font-size: 1.8em;
+    } 
+     .partydesc{
+      padding: 0;
     }
 }
 
@@ -1936,5 +1968,18 @@ hr{
     }
     .whycontentleft{
     margin-left: .5em;
+    }
+    .pressarticle{
+    min-height: 30vh;  
+    }  
+    .playhero {
+     top: 40%;
+    left: 50%;
+    }
+    .playhero h1{
+        font-size: 1.6em;
+    } 
+    .partydesc{
+        padding: 0;
     }
 }
