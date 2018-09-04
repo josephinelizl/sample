@@ -18,6 +18,16 @@
           }
     });
 
+
+      $(function (){
+        if($('#mobile-number').width() > 767){
+            $('#mobile-number').attr('href', '#tm-section-4');
+        } 
+          else {
+              $('#mobile-number').attr('href','tel:1-773-961-8096');
+          }
+      });
+
         /* navigation links hide when click */
              $(document).on('click','#collapsingNavbar2',function(e) {
                 if( $(e.target).is('a') ) {
