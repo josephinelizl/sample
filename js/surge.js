@@ -2,7 +2,7 @@
 
     /* navbar changes color when scrolled down */
     $(window).scroll(function() {
-                  if ($(this).scrollTop() > 70 && $('.navbar').width() > 760) {
+                  if ($(this).scrollTop() > 70 && $('.navbar').width() > 700) {
                       $('.navbar').addClass('try');  
                   } else {
                       $('.navbar').removeClass('try');

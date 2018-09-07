@@ -619,7 +619,6 @@ h5 {
 
 .hero h2{
     font-family: surgefontmedium;
-    margin-top: 2em;
     font-size: 3.5em;
     font-weight: bold;
     color: white;
@@ -864,8 +863,9 @@ h5 {
 }
 
 hr{
-    width: 50%;
+    width: 35%;
     background-color: #fad21e;    
+    padding: .1em;
 }
 
 .menubutton{
@@ -1016,65 +1016,89 @@ hr{
     min-height: 60vh;  
 }
 
+.pool-specials{
+    background-image: url("../img/pool-specials.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 55vh;  
+}
 
 .playcontainer{
-    min-height: 100vh;
-}
-
-.playheader{
-    font-family: surgefont;
-    text-align: center;
-    color: #fad21e;
-    margin-top: 2em;
-}
-
-.playdesc{
-    font-family: surgefontlighter;
-    font-size: 1.2em;
-    text-align: center;
-    color: #0f1111;
-    padding: 1.5em 4em 3em 4em;
+    min-height: 85vh;
 }
 
 .playcolumn{
+    margin-top: 8em;
     float: left;
-    width: 33.33%;       
-    text-align: justify;
-    
+    width: 50%;       
+    text-align: center;    
 }
 
-.card{
-    box-shadow: 0 10px 20px rgba(0,0,0,0.2), 0 6px 6px rgba(0,0,0,0.1);
+
+.play-left h1{
+    padding-bottom: 2.37em;
 }
 
-.card.border-dark.mb-3.mx-auto{
-    max-width: 25rem;
-    height: 20rem;
+.play-right{
+    border-left: 2px solid #0e1111;
 }
 
-.card-header{
-    color: #fad21e;
-    font-size: 2em;
-    font-family: surgefont;
+.flex-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.flex-content{
+    font-size: 1.5em;
+    padding: .5em 1em;
+}
+
+.move-left{
+    margin-right: .7em;
+}
+
+.move-right{
+    margin-left: .5em;
+}
+
+.move-left-addl{
+    margin-right: 1.5em;
+}
+
+.play-sub-description{
     text-align: center;
-    letter-spacing: 2px;
-    background-color: #0f1111 !important;
+    padding-top: 2em;
+}
+
+.pool-content{
+    text-align: center;
+    padding-top: 2em;
+}
+
+.pool-content h2{
+    font-family: surgefont;
+    color: #fad21e;
+    letter-spacing: 3px;
+    font-size: 3em;
+}
+
+.pool-content p{
+    color: white;
+    font-family: surgefontmedium;
+    font-size: 2em;
+}
+
+.pool-margin-top-hr{
+    margin-top: 1.5em;
+}
+.pool-margin-top{
+    margin-top: 1em;
+    padding-bottom: 1em;
+    margin-bottom: -1em;
     
-}
-
-.card-title{
-     font-family: surgefontmedium;
-     color: #0f1111;
-     letter-spacing: 2px;
-}
-
-.card-text{
-     font-family: surgefont;
-     font-size: 3em;
-     color: #fad21e;
-     margin-top: 1em;
-     text-align: center;
-     letter-spacing: 2px;
 }
 
  /* Parties */
@@ -1089,7 +1113,7 @@ hr{
 }
 
 .partycontainer{
-    min-height: 80vh;
+   max-width: 100%;
 }
 
 .partyheromobile h1{
@@ -1099,7 +1123,7 @@ hr{
 .partydesc{
     margin-top: 2em;
     font-family: surgefontmedium;
-    font-size: 1.1em;
+    font-size: 1em;
     text-align: center;
     color: #0f1111;
     padding: .5em 8em .5em 8em;
@@ -1113,7 +1137,7 @@ hr{
 }
 .partycontent{
     margin: 0 auto;
-    width: 800px;
+    width: 65%;
 }
 
 .partycontent textarea{
@@ -1357,6 +1381,12 @@ hr{
     .vertical-center{
         padding-top: .5em;
     }
+     .partycontent{
+        width: 100%;
+    }
+     .pool-specials{
+        margin-bottom: -1em;
+    }
 }
 @media screen and (max-width: 991px) {
 	.tm-img-container {
@@ -1503,6 +1533,22 @@ hr{
     }
      .partydesc{
       padding: 0;
+    }
+     .menuhero {
+      top: 40%;
+      left: 50%;
+    }
+     .menu-content{
+        padding-top: .5em;
+    }
+     .partycontent{
+        width: 100%;
+    }
+     .play-right{
+        border: none;
+    }
+     .pool-specials{
+        margin-bottom: -1em;
     }
 }
 
@@ -1673,15 +1719,31 @@ hr{
     .whycontentleft{
     margin-left: .5em;
     }
-         .playhero {
+    .playhero {
       top: 40%;
       left: 50%;
     }
      .playhero h1{
       font-size: 3em;
     } 
+    .menuhero {
+      top: 40%;
+      left: 50%;
+    }
      .partydesc{
       padding: 0;
+    }
+     .menu-content{
+        padding-top: .5em;
+    }
+     .partycontent{
+        width: 100%;
+    }
+     .play-right{
+        border: none;
+    }
+     .pool-specials{
+        margin-bottom: -1em;
     }
 }
 
@@ -1865,9 +1927,33 @@ hr{
     }
      .playhero h1{
       font-size: 2.2em;
-    } 
+    }
+     .menuhero {
+      top: 40%;
+      left: 50%;
+    }
      .partydesc{
       padding: 0;
+    }
+     .menu-content{
+        padding-top: .5em;
+    }
+     .partycontent{
+        width: 100%;
+    }
+     .move-right{
+    margin-left: 0 !important;
+    }
+
+     .move-left-addl{
+     margin-right: 0 !important;
+    }
+    
+    .play-right{
+        border: none;
+    }
+     .pool-specials{
+        margin-bottom: -1em;
     }
 }
 
@@ -1925,9 +2011,32 @@ hr{
     }
      .playhero h1{
       font-size: 1.8em;
-    } 
+    }
+     .menuhero {
+      top: 40%;
+      left: 50%;
+    }
      .partydesc{
       padding: 0;
+    }
+     .menu-content{
+        padding-top: .5em;
+    }
+     .partycontent{
+        width: 100%;
+    }
+    .move-right{
+    margin-left: 0 !important;
+    }
+
+    .move-left-addl{
+     margin-right: 0 !important;
+    }
+     .play-right{
+        border: none;
+    }
+        .pool-specials{
+        margin-bottom: -1em;
     }
 }
 
@@ -1988,8 +2097,35 @@ hr{
     }
     .playhero h1{
         font-size: 1.6em;
-    } 
+    }
+     .menuhero {
+      top: 40%;
+      left: 50%;
+    }
     .partydesc{
         padding: 0;
     }
+    .menu-content{
+        padding-top: .5em;
+    }
+    .partycontent{
+        width: 100%;
+    }
+     .play-right{
+        border: none;
+    }
+    .pool-specials{
+        margin-bottom: -1em;
+    }
+}
+
+/* Landscape */
+@media screen  and (min-width: 530px) and (max-width: 740px){
+     .surgelogo{
+        top: 2% !important;
+    }
+    .pressarticle h4{
+        padding-bottom: 2em !important;
+    }
+   
 }
