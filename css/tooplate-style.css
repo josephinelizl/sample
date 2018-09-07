@@ -1038,11 +1038,16 @@ hr{
 
 
 .play-left h1{
+    font-family: surgefontmedium;
     padding-bottom: 2.37em;
 }
 
 .play-right{
     border-left: 2px solid #0e1111;
+}
+
+.play-right h1 {
+    font-family: surgefontmedium; 
 }
 
 .flex-container{
@@ -1052,6 +1057,7 @@ hr{
 }
 
 .flex-content{
+    font-family: surgefontlighter;
     font-size: 1.5em;
     padding: .5em 1em;
 }
@@ -1069,6 +1075,7 @@ hr{
 }
 
 .play-sub-description{
+    font-family: surgefontmedium; 
     text-align: center;
     padding-top: 2em;
 }
