@@ -30,35 +30,47 @@ body {
 }
 
 .carouselparallax {
-    background-image: url('../img/carousel.png');
-    min-height: 100vh; 
+    background: url('../img/BLB17805.jpg')  no-repeat center center fixed;
+    min-height: 100vh;  
 
     /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center top;
-    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
 }
 .carousel2parallax {
-    background-image: url('../img/carousel2.jpg');
+    background: url('../img/BLB17857.jpg')  no-repeat center center fixed;
     min-height: 100vh; 
 
     /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center top;
-    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
 }
 .carousel3parallax {
-    background-image: url('../img/carousel3.jpg');
+    background: url('../img/IMG_2986.JPG') no-repeat center center fixed;
     min-height: 100vh; 
 
     /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center top;
-    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
 }
+
+.carousel4parallax {
+    background: url('../img/IMG_3089_Edited.jpg')  no-repeat center center fixed;
+    min-height: 100vh; 
+
+    /* Create the parallax scrolling effect */
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
 
 .parallax1 {
     background-image: url('../img/4321.jpg');
@@ -72,7 +84,7 @@ body {
 }
 
 .parallax2 {
-    background-image: url('../img/happyhour.jpg');
+    background-image: url('../img/happyhouroffical.jpg');
     min-height: 30vh; 
 
     /* Create the parallax scrolling effect */
@@ -458,22 +470,22 @@ h5 {
 }
 
 .about {
-    background-image: url("../img/about.jpg");
+    background-image: url("../img/aboutus.jpg");
     background-size: cover;
 }
 
 .party{
-    background-image: url("../img/playofficial.jpg");
+    background-image: url("../img/poolrates.jpg");
     background-size: cover;
 }
 
 .menu {
-    background-image: url("../img/menusofficial.jpg");
+    background-image: url("../img/dailyspecials.jpg");
     background-size: cover;
 }
 
 .leagues {
-    background-image: url("../img/bookofficial.jpg");
+    background-image: url("../img/moreinfo.jpg");
     background-size: cover;
 }
 
@@ -533,6 +545,7 @@ h5 {
     font-size: 2em;
     margin-bottom: 0;
     text-align: center;
+    
 }
 
 .center-content > h3{
@@ -562,26 +575,29 @@ h5 {
 }
 
 .for-instagram-parallax{
-    padding-top: 2em;
-    margin: -1em 0;
+    padding-top: 5em;
+    padding-bottom: -1em;
+    margin: -1em 0 -2.5em 0;
 }
 
 
 /* About Page */
 
 .aboutparallax {
-    background-image: url('../img/visionparallax.jpg');
+    background: url('../img/IMG_3000.JPG') no-repeat center center fixed;
     min-height: 60vh; 
 
     /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
+
+   
 }
 
 .whypressparallax {
-    background-image: url('../img/visionparallax.jpg');
+    background-image: url('../img/IMG_3000.JPG');
     min-height: 20vh; 
 
     /* Create the parallax scrolling effect */
@@ -596,6 +612,7 @@ h5 {
     color: white;
     text-align: center;
     padding-top: 1.4em;
+    text-shadow: -.030em .030em #1F1E23, -.08em .08em #1F1E23;
 }
 
 .aboutcontent{
@@ -621,6 +638,7 @@ h5 {
     font-weight: bold;
     color: white;
     letter-spacing: 5px;
+    text-shadow: -.04em .04em #1F1E23;
 }
 
 .hero h2{
@@ -629,6 +647,7 @@ h5 {
     font-weight: bold;
     color: white;
     letter-spacing: 5px;
+    text-shadow: -.04em .04em #1F1E23;
 }
 
 .hero h4{
@@ -637,6 +656,7 @@ h5 {
     font-weight: bolder;
     color: white;
     letter-spacing: 5px;
+    text-shadow: -.030em .030em #1F1E23, -.08em .08em #1F1E23;
 }
 
 .aboutcontent h1{
@@ -835,12 +855,14 @@ h5 {
 /* Menu Page */
 
 .menunavigation{
-    background-image: url("../img/forcontact.jpg");
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    min-height: 60vh;  
+    background: url('../img/DSC09781_Edited.jpg') no-repeat center center fixed;
+    min-height: 60vh; 
+
+    /* Create the parallax scrolling effect */
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;  
 }
 
 .menuimages{
@@ -1117,7 +1139,7 @@ hr{
  /* Parties */
 
 .partynavigation{
-    background-image: url("../img/parties.jpg");
+    background-image: url("../img/surge1.jpg");
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
@@ -1180,12 +1202,12 @@ hr{
 /* Gallery */
 
 .gallerynavigation{
-    background-image: url("../img/gallery.jpg");
+    background-image: url("../img/BLB17847_Edited.jpg");
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    min-height: 50vh;  
+    min-height: 60vh;  
 }
 
 .gallerycontainer{
@@ -1203,7 +1225,7 @@ hr{
     font-size: 1.2em;
     text-align: center;
     color: #0f1111;
-    padding: 1.5em 8em -1em 8em;
+    margin-top: 2em;
 }
 
 .gallerydesc a{
