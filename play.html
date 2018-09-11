@@ -42,7 +42,7 @@ http://www.tooplate.com/view/2096-individual
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
-    <script src="../2096_individual/js/surge.js"></script>
+    <script src="../../js/surge.js"></script>
 
   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -55,26 +55,26 @@ http://www.tooplate.com/view/2096-individual
     <body> 
       <div class="playnavigation">
           <nav class="navbar navbar-transparent navbar-expand-md justify-content-center">
-            <a href="../2096_individual/index.html" class="navbar-brand mr-0"> <img src="../2096_individual/img/sample.png" alt="SURGE" width="180" height="55"></a> 
+            <a href="../../index.html" class="navbar-brand mr-0"> <img src="../../img/sample.png" alt="SURGE" width="180" height="55"></a> 
             <button class="navbar-toggler ml-1" type="button" data-toggle="collapse" data-target="#collapsingNavbar2">
                 <span class="navbar-toggler-icon"><i class="fa fa-align-justify toggleicon"></i></span>
             </button>
             <div class="navbar-collapse collapse justify-content-center align-items-center w-100" id="collapsingNavbar2">
                 <ul class="navbar-nav mx-auto text-center text-white">
                     <li class="nav-item">
-                        <a class="nav-link" href="../2096_individual/about.html">ABOUT</a>
+                        <a class="nav-link" href="../../about.html">ABOUT</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link activenavigation">PLAY</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="../2096_individual/menus.html">MENUS</a> 
+                        <a class="nav-link" href="../../menus.html">MENUS</a> 
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="../2096_individual/parties.html">PARTIES</a>
+                        <a class="nav-link" href="../../parties.html">PARTIES</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="../2096_individual/gallery.html">GALLERY</a>
+                        <a class="nav-link" href="../../gallery.html">GALLERY</a>
                     </li>
                 </ul>
                 <ul class="nav navbar-nav flex-row justify-content-center flex-nowrap navcontact">

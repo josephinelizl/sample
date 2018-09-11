@@ -39,7 +39,7 @@ http://www.tooplate.com/view/2096-individual
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
-    <script src="../2096_individual/js/surge.js"></script>
+    <script src="../../js/surge.js"></script>
 
   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -52,7 +52,7 @@ http://www.tooplate.com/view/2096-individual
     <body> 
       <div class="aboutparallax">
           <nav class="navbar navbar-transparent navbar-expand-md justify-content-center">
-             <a href="../2096_individual/index.html" class="navbar-brand mr-0"> <img src="../2096_individual/img/sample.png" alt="SURGE" width="180" height="55"></a> 
+             <a href="../../index.html" class="navbar-brand mr-0"> <img src="../../img/sample.png" alt="SURGE" width="180" height="55"></a> 
                <button class="navbar-toggler ml-1" type="button" data-toggle="collapse" data-target="#collapsingNavbar2">
                 <span class="navbar-toggler-icon"><i class="fa fa-align-justify toggleicon"></i></span>
                </button>
@@ -63,16 +63,16 @@ http://www.tooplate.com/view/2096-individual
                         <a class="nav-link activenavigation" >ABOUT</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="../2096_individual/play.html">PLAY</a>
+                        <a class="nav-link" href="../../play.html">PLAY</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="../2096_individual/menus.html">MENUS</a> 
+                        <a class="nav-link" href="../../menus.html">MENUS</a> 
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="../2096_individual/parties.html">PARTIES</a>
+                        <a class="nav-link" href="../../parties.html">PARTIES</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="../2096_individual/gallery.html">GALLERY</a>
+                        <a class="nav-link" href="../../gallery.html">GALLERY</a>
                     </li>
                </ul>
                 
@@ -95,7 +95,7 @@ http://www.tooplate.com/view/2096-individual
           <div class="row">
               
             <div class="aboutcontent historyleft" >
-             <img src="../2096_individual/img/IMG_3461.JPG" alt="surge">
+             <img src="../../img/IMG_3461.JPG" alt="surge">
             </div> 
               
             <div class="aboutcontent historyright">
