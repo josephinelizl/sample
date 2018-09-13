@@ -288,7 +288,6 @@ h5 {
 	font-size: 20px;
 	color: white;
 	opacity: 1;
-	opacity: 1;
 }
 
 .slick-dots {
@@ -823,17 +822,17 @@ h5 {
 }
 
 .presscolorone{
-    background-color: rgb(28, 42, 45);
+    background-color: rgb(133, 146, 158);
    
 }
 
 .presscolortwo{
-    background-color: rgb(36, 48, 53) ;
+    background-color: rgb(86, 101, 115) ;
 }
 
 
 .presscolorthree{
-    background-color: rgb(50, 55, 58) ;
+    background-color: rgb(39, 55, 70) ;
     
 }
 
@@ -1091,15 +1090,19 @@ hr{
 }
 
 .move-left{
-    margin-right: .7em;
+    margin-right: .4em;
 }
 
 .move-right{
-    margin-left: .5em;
+    margin-left: 1.2em;
 }
 
 .move-left-addl{
-    margin-right: 1.5em;
+    margin-right: 1.8em;
+}
+
+.move-right-fourplus{
+    margin-left: .2em;
 }
 
 .play-sub-description{
@@ -1221,11 +1224,11 @@ hr{
 }
 
 .gallerydesc{
-    font-family: surgefontlighter;
+    font-family: surgefontmedium;
     font-size: 1.2em;
     text-align: center;
     color: #0f1111;
-    margin-top: 2em;
+    margin: 2em 0 5em 0;
 }
 
 .gallerydesc a{
@@ -1243,6 +1246,20 @@ hr{
     margin-top: -4em !important;
     padding-top: -4em !important;
 }
+
+.eapps-instagram-feed-posts-grid-load-more{
+    color: black !important;
+} 
+
+.eapps-form-actions{
+    position: relative !important;
+}
+
+.eapps-form-button{
+    position: absolute !important;
+    right: 0 !important;
+}
+
 /* footer */
 
 .footer1 {
@@ -1492,6 +1509,9 @@ hr{
     .carousel3parallax{
         min-height: 80vh;
     }
+    .carousel4parallax{
+        min-height: 80vh;
+    }
      .footericons1{
         display: inline-block;
     }
@@ -1668,6 +1688,7 @@ hr{
     .center-content{
         width: 100%;
         padding: 0 1em;
+        opacity: 1;
     }
       .carouselparallax{
         min-height: 80vh;
@@ -1676,6 +1697,9 @@ hr{
         min-height: 80vh;
     }
     .carousel3parallax{
+        min-height: 80vh;
+    }
+    .carousel4parallax{
         min-height: 80vh;
     }
      .footericons1{
@@ -1798,6 +1822,7 @@ hr{
     .center-content{
         width: 100%;
         padding: 0 1em;
+        opacity: 1;
     }
     .carousel-inner img {
         width: 100%;
@@ -1878,6 +1903,9 @@ hr{
         min-height: 80vh;
     }
     .carousel3parallax{
+        min-height: 80vh;
+    }
+    .carousel4parallax{
         min-height: 80vh;
     }
     .footericons1{
@@ -2073,6 +2101,9 @@ hr{
         .pool-specials{
         margin-bottom: -1em;
     }
+    .center-content{
+        opacity: 1;
+    }
 }
 
 @media screen and (max-width: 340px) {
@@ -2152,6 +2183,9 @@ hr{
     .pool-specials{
         margin-bottom: -1em;
     }
+    .center-content{
+        opacity: 1;
+    }
 }
 
 /* Landscape */
@@ -2163,4 +2197,9 @@ hr{
         padding-bottom: 2em !important;
     }
    
+    .center-content{
+        opacity: 1;
+    }
 }
+
+
