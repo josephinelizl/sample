@@ -5,7 +5,9 @@ $(window).scroll(function() {
     } else {
         $('.navbar').removeClass('try');
     }
-}); /* Show bottom footer and hide the static footer when srolled down at the bottom of the page */
+}); 
+
+/* Show bottom footer and hide the static footer when srolled down at the bottom of the page */
 $(window).scroll(function() {
     if ($(window).scrollTop() + $(window).height() > $(document).height() - 220) {
         $('.footer1').hide();
@@ -13,18 +15,25 @@ $(window).scroll(function() {
         $('.footer1').show();
     }
 });
+
+
 $(function() {
     if ($('#mobile-number').width() > 767) {
         $('#mobile-number').attr('href', '#tm-section-4');
     } else {
         $('#mobile-number').attr('href', 'tel:1-773-961-8096');
     }
-}); /* navigation links hide when click */
+});
+
+/* navigation links hide when click */
 $(document).on('click', '#collapsingNavbar2', function(e) {
     if ($(e.target).is('a')) {
         $(this).collapse('hide');
     }
-}); /* Menus button */
+}); 
+
+
+/* Menus button */
 function changeMenu(a) {
     var dailyspecials = document.getElementById("dailyspecials");
     var coffee = document.getElementById("coffee");
@@ -119,7 +128,7 @@ $(document).ready(function() { /* Every time the window is scrolled ... */
 });
 $(document).ready(function() {
     $('.carousel').carousel({
-        interval: 10000
+        interval: 3000
     });
 });
 $(document).ready(function() { /* Every time the window is scrolled ... */

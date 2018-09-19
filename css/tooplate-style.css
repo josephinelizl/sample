@@ -15,6 +15,15 @@
     src: url(../font-awesome-4.5.0/fonts/TTF/ATCArquette-Medium.ttf) format('truetype');
 }
 
+*{
+    box-sizing: border-box;
+}
+
+div, img {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     font-family: surgefont, surgefontlighter, surgefontmedium;
     font-size: 19px;
@@ -24,7 +33,7 @@ body {
 }
 
 .carouselparallax {
-    background: url('../img/IMG_2986-min.JPG') no-repeat center center fixed;
+    background: url('../img/BLB17857-min.jpg') no-repeat center center fixed;
     min-height: 100vh;
     /* Create the parallax scrolling effect */
     -webkit-background-size: cover;
@@ -34,7 +43,7 @@ body {
 }
 
 .carousel2parallax {
-    background: url('../img/IMG_3089_Edited-min.jpg') no-repeat center center fixed;
+    background: url('../img/BLB17805-min.jpg') no-repeat center center fixed;
     min-height: 100vh;
     /* Create the parallax scrolling effect */
     -webkit-background-size: cover;
@@ -44,7 +53,7 @@ body {
 }
 
 .carousel3parallax {
-    background: url('../img/BLB17805.jpg') no-repeat center center fixed;
+    background: url('../img/IMG_3089_Edited-min.jpg') no-repeat center center fixed;
     min-height: 100vh;
     /* Create the parallax scrolling effect */
     -webkit-background-size: cover;
@@ -54,7 +63,7 @@ body {
 }
 
 .carousel4parallax {
-    background: url('../img/BLB17857.jpg') no-repeat center center fixed;
+    background: url('../img/IMG_2986-min.JPG') no-repeat center center fixed;
     min-height: 100vh;
     /* Create the parallax scrolling effect */
     -webkit-background-size: cover;
@@ -73,15 +82,6 @@ body {
     background-size: cover;
 }
 
-.parallax2 {
-    background-image: url('../img/happyhouroffical-min.jpg');
-    min-height: 30vh;
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
 
 .row:after {
     content: "";
@@ -335,12 +335,16 @@ h5 {
 
 .navbar-toggler.ml-1 {
     border: 2px solid white;
+    position: absolute;
+    right: .5em;
+    top: 1.2em;
 }
 
 .toggleicon {
     font-size: 25px;
     margin-top: 4px;
     color: white;
+    
 }
 
 .activenavigation {
@@ -482,22 +486,6 @@ h5 {
     text-align: center;
 }
 
-.happycontent > h2 {
-    color: white;
-    text-align: center;
-    padding: 1em 0 .5em 0;
-    font-size: 3.5em;
-    font-weight: bolder;
-}
-
-.happydesc {
-    font-family: surgefontmedium;
-    text-align: center;
-    color: white;
-    font-size: 2em;
-    opacity: 0;
-    padding: .4em;
-}
 
 .center-content {
     font-family: surgefont;
@@ -516,9 +504,7 @@ h5 {
 }
 
 .center-content > h1 {
-    margin-top: 2em;
     color: white;
-    line-height: 1;
     text-transform: uppercase;
     font-weight: 900;
     font-size: 2em;
@@ -526,13 +512,17 @@ h5 {
     text-align: center;
 }
 
-.center-content > h3 {
-    color: white;
-    line-height: 1;
-    margin-bottom: 40px;
-    font-size: 1em;
-    font-weight: bold;
-    text-align: center;
+.content-top{
+    margin-top: 3em;
+}
+
+.content-bottom{
+    margin-top: -.5em !important;
+}
+
+.content-top-trbox{
+    margin-top: 3em;
+    padding-bottom: 2em;
 }
 
 .button {
@@ -551,19 +541,19 @@ h5 {
     border-color: rgb(250, 210, 30);
     color: white;
     text-decoration: none;
+    text-decoration: none;
 }
 
 .for-instagram-parallax {
     padding-top: 5em;
-    padding-bottom: -1em;
-    margin: -1em 0 -2.5em 0;
+    margin-top: -1em;
 }
 
 
 /* About Page */
 
 .aboutparallax {
-    background: url('../img/IMG_3000.JPG') no-repeat center center fixed;
+    background: url('../img/IMG_3000-min.JPG') no-repeat center center fixed;
     min-height: 60vh;
     /* Create the parallax scrolling effect */
     -webkit-background-size: cover;
@@ -573,7 +563,7 @@ h5 {
 }
 
 .whypressparallax {
-    background-image: url('../img/IMG_3000.JPG');
+    background-image: url('../img/IMG_3000-min.JPG');
     min-height: 20vh;
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
@@ -587,7 +577,7 @@ h5 {
     color: white;
     text-align: center;
     padding-top: 1.4em;
-    text-shadow: -.030em .030em #1F1E23, -.08em .08em #1F1E23;
+/*    text-shadow: -.030em .030em #1F1E23, -.08em .08em #1F1E23;*/
 }
 
 .aboutcontent {
@@ -597,41 +587,6 @@ h5 {
     text-align: center;
     margin: 3em 0;
     justify-content: center;
-}
-
-.hero {
-    position: absolute;
-    text-align: center;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.hero h1 {
-    font-family: surgefontmedium;
-    font-size: 6em;
-    font-weight: bold;
-    color: white;
-    letter-spacing: 5px;
-    text-shadow: -.04em .04em #1F1E23;
-}
-
-.hero h2 {
-    font-family: surgefontmedium;
-    font-size: 3.5em;
-    font-weight: bold;
-    color: white;
-    letter-spacing: 5px;
-    text-shadow: -.04em .04em #1F1E23;
-}
-
-.hero h4 {
-    font-family: surgefontmedium;
-    font-size: 1.4em;
-    font-weight: bolder;
-    color: white;
-    letter-spacing: 5px;
-    text-shadow: -.030em .030em #1F1E23, -.08em .08em #1F1E23;
 }
 
 .aboutcontent h1 {
@@ -692,22 +647,22 @@ h5 {
     text-align: center;
     margin: 2em .5em;
     padding: 2em 0;
-    border: 1px solid #fad21e;
-    background-color: rgba(8, 11, 12, .9);
-    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.4), 0 7px 6px rgba(0, 0, 0, 0.3);
 }
 
+.whycontentbox{
+    border: 2px dotted #fad21e;
+}
 .whycontentleft {
     margin-left: 2em;
 }
 
 .whycontent h1 {
     font-family: surgefontmedium;
-    color: white;
+    color: #fad21e;
     font-weight: bold;
-    margin-bottom: -.5em;
     letter-spacing: 2px;
     font-size: 2em;
+    padding-top: 1em;
 }
 
 .whycontent p {
@@ -717,20 +672,27 @@ h5 {
     font-weight: lighter;
     letter-spacing: 2px;
     text-align: justify;
-    color: whitesmoke;
-    padding-top: .5em;
-    font-size: .9em;
+    color: #0e1111;
+    padding: 1em;
+    font-size: .8em;
 }
 
 .press {
-    min-height: 25vh;
-    padding-bottom: 1.5em;
+    background-image: url("../img/4321.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .presscarousel {
-    padding-top: 2em;
+    max-width: 80%;
+    padding: 1em 0;
     margin: auto;
     top: 25%;
+}
+
+.press-inner{
+   background-color:#132e47;
 }
 
 .presscontent {
@@ -740,7 +702,7 @@ h5 {
     text-align: center;
     justify-content: center;
     padding: 1em 0;
-    background-color: black;
+   
 }
 
 .carouselinnerpress {
@@ -757,7 +719,6 @@ h5 {
 
 .pressarticle h4 {
     font-family: surgefontmedium;
-    margin: 0 3em;
     font-weight: lighter;
     letter-spacing: 2px;
     text-align: center;
@@ -767,7 +728,7 @@ h5 {
 
 .pressicons {
     font-size: 48px;
-    color: dimgray;
+    color: white;
 }
 
 .pressarticle {
@@ -797,23 +758,25 @@ h5 {
 }
 
 .presscolorone {
-    background-color: rgb(133, 146, 158);
+  
+    border-right: 1px solid white;
 }
 
 .presscolortwo {
-    background-color: rgb(86, 101, 115);
+   
+    border-right: 1px solid white;
 }
 
 .presscolorthree {
-    background-color: rgb(39, 55, 70);
+    
 }
 
 .pressprev {
-    margin-left: -5em;
+    margin-left: -4em;
 }
 
 .pressnext {
-    margin-right: -5em;
+    margin-right: -4em;
 }
 
 
@@ -828,7 +791,7 @@ h5 {
 /* Menu Page */
 
 .menuparallax {
-    background: url('../img/DSC09781_Edited.jpg') no-repeat center center fixed;
+    background: url('../img/DSC09781_Edited-min.jpg') no-repeat center center fixed;
     min-height: 60vh;
     /* Create the parallax scrolling effect */
     -webkit-background-size: cover;
@@ -837,12 +800,30 @@ h5 {
     background-size: cover;
 }
 
-.menuimages {
-    text-align: center;
+.image-container{
+    padding-top: 3em;
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
 }
 
+.image-container > .image-box{
+    height: 150px;
+    flex-basis: 150px;
+    margin: .5em; 
+    overflow: hidden;
+}
+
+
+.image-container > .image-box > img{
+   height: 100%;
+   width: 100%;
+   object-fit: cover;
+}
+
+ 
 .menu-content {
-    padding-top: 4em;
+    padding-top: .5em;
     letter-spacing: 5px;
     flex-direction: column;
     align-items: center;
@@ -863,19 +844,23 @@ h5 {
 }
 
 hr {
-    width: 35%;
+    width: 25%;
     background-color: #fad21e;
     padding: .1em;
 }
 
+.menulist{
+     display:flex;
+    justify-content: center;
+    flex-flow: row wrap;
+}
 .menubutton {
     font-family: surgefontmedium;
     display: inline-flex;
     justify-content: center;
     cursor: pointer;
     text-transform: uppercase;
-    font-size: 1em;
-    font-weight: bolder;
+    font-size: .85em;
     letter-spacing: 5px;
     color: #0e1111;
     text-decoration: none;
@@ -951,7 +936,7 @@ hr {
     font-size: .9em;
     color: rgba(15, 17, 17, .8);
     text-align: justify;
-    border-top: .5px dashed rgba(15, 17, 17, .1);
+/*    border-top: .5px dashed rgba(15, 17, 17, .1);*/
     padding-top: .5em;
 }
 
@@ -1019,16 +1004,16 @@ hr {
 }
 
 .pool-specials {
-    background-image: url("../img/pool-specials.jpg");
+    background-image: url("../img/happyhouroffical-min.jpg");
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    min-height: 55vh;
+    min-height: 40vh;
 }
 
 .playcontainer {
-    min-height: 85vh;
+    min-height: 75vh; 
 }
 
 .playcolumn {
@@ -1038,28 +1023,44 @@ hr {
     text-align: center;
 }
 
+.playinnercolumn{
+    float:left;
+    width: 25%;
+    text-align: center;
+}
 .play-left h1 {
     font-family: surgefontmedium;
+    font-size: 2em;
     padding-bottom: 2.37em;
 }
 
 .play-right {
     border-left: 2px solid #0e1111;
+    
 }
 
 .play-right h1 {
     font-family: surgefontmedium;
+    font-size: 2em;
+}
+
+.play-right h1:nth-child(2){
+    margin: -.7em 0 .7em 0 !important;
+    
 }
 
 .flex-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    width: 70%;
+    position: relative;
+    left: 15%;
 }
 
 .flex-content {
     font-family: surgefontlighter;
-    font-size: 1.5em;
+    font-size: 1.2em;
     padding: .5em 1em;
 }
 
@@ -1080,35 +1081,36 @@ hr {
 }
 
 .play-sub-description {
-    font-family: surgefontmedium;
+    font-family: surgefontlighter;
     text-align: center;
-    padding-top: 2em;
+    padding-top: 3em;
+    font-size: 1.2em;
 }
 
 .pool-content {
     text-align: center;
-    padding-top: 2em;
 }
 
 .pool-content h2 {
     font-family: surgefont;
     color: #fad21e;
     letter-spacing: 3px;
-    font-size: 3em;
+    font-size: 2em;
+    padding-top: 1.5em;
 }
 
 .pool-content p {
     color: white;
     font-family: surgefontmedium;
-    font-size: 2em;
+    font-size: 1.5em;
 }
 
 .pool-margin-top-hr {
-    margin-top: 1.5em;
+    margin-top: .5em;
 }
 
 .pool-margin-top {
-    margin-top: 1em;
+    margin-top: 1.2em;
     padding-bottom: 1em;
     margin-bottom: -1em;
 }
@@ -1129,9 +1131,6 @@ hr {
     max-width: 100%;
 }
 
-.partyheromobile h1 {
-    display: none;
-}
 
 .partydesc {
     margin-top: 2em;
@@ -1235,9 +1234,26 @@ hr {
 .eapps-form-button {
     position: absolute !important;
     right: 0 !important;
+    margin-top: -1em !important;
 }
-
-
+.eapps-form-element-text{
+    margin-top: -1em !important;
+}
+.eapps-form-element-email{
+    margin-top: -1em !important;
+}
+.eapps-form-element-phone{
+    margin-top: -1em !important;
+}
+.eapps-form-element-dropdown{
+    margin-top: -1em !important;
+}
+.eapps-form-element-datepicker{
+    margin-top: -1em !important;
+}
+.eapps-form-element-textarea{
+    margin-top: -3.5em !important;
+}
 /* footer */
 
 .footer1 {
@@ -1266,6 +1282,12 @@ hr {
 
 .columnfooter {
     float: left;
+    width: 16%;
+    text-align: left;
+    padding: 0;
+}
+.columnfootermap {
+    float: left;
     width: 20%;
     text-align: left;
     padding: 0;
@@ -1278,7 +1300,7 @@ hr {
 }
 
 .ficons {
-    padding-left: 4.5em;
+    padding-left: 5em;
 }
 
 .one {
@@ -1294,7 +1316,7 @@ hr {
 
 .footericons1 {
     margin-top: .1em;
-    font-size: 35px;
+    font-size: 28px;
     display: inline-block;
     color: gray;
 }
@@ -1318,10 +1340,10 @@ hr {
 }
 
 .footertitle {
-    font-family: surgefont;
-    font-size: 1.4em;
+    font-family: surgefontmedium;
+    font-size: 1.2em;
     color: white;
-    margin-left: -.8em;
+    margin-left: -1em;
     padding-top: .5em;
 }
 
@@ -1345,32 +1367,46 @@ hr {
 
 .storehours > h6 {
     color: rgba(255, 255, 255, 0.8);
-    font-size: 1em;
+    font-size: .9em;
 }
 
 .contact > h6 {
     color: rgba(255, 255, 255, 0.8);
-    font-size: 1em;
+    font-size: .9em;
 }
 
 .contact > h6 > a {
     color: rgba(255, 255, 255, 0.8);
 }
 
-.contact > h6 > a:hover {
+.footeraddress > h6 > a:hover {
+    text-decoration: none;
+    color: #fad21e;
+}
+
+.footeraddress > h6 {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: .9em;
+}
+
+.footeraddress > h6 > a {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.footeraddress > h6 > a:hover {
     text-decoration: none;
     color: #fad21e;
 }
 
 #map {
     width: 250px;
-    height: 240px;
-    padding-top: 1em;
+    height: 220px;
+    margin: 1em 0 !important;
     border-style: none;
 }
 
 .vertical-center {
-    padding-top: 5em;
+    padding-top: 4em;
 }
 
 
@@ -1380,8 +1416,8 @@ hr {
     .columnfooter {
         width: 50%;
     }
-    .columnfooter:nth-child(5) {
-        width: 100% !important;
+    .columnfootermap {
+        width: 100%;
     }
     #map {
         display: block;
@@ -1402,6 +1438,9 @@ hr {
     .contact {
         text-align: center;
         /* padding-left: 20em;*/
+    }
+    .footeraddress{
+        text-align: center;
     }
     .vertical-center {
         padding-top: .5em;
@@ -1496,13 +1535,6 @@ hr {
     .aboutparallax {
         min-height: 80vh;
     }
-    .hero {
-        top: 50%;
-        left: 50%;
-    }
-    .menuimages {
-        display: none;
-    }
     .menucolumninner h1 {
         padding: 2em 0 0 0;
         text-align: center;
@@ -1513,6 +1545,9 @@ hr {
     .columnfooter {
         width: 100%;
         text-align: center;
+    }
+    .columnfootermap{
+        width: 100%;
     }
     .ficons {
         padding-left: 0;
@@ -1537,26 +1572,18 @@ hr {
         text-align: center;
         /* padding-left: 20em;*/
     }
+    .footertitle{
+        text-align: center;
+    }
     .playcolumn {
         width: 100%;
-    }
-    .hero h2 {
-        margin-top: -5em;
-        font-size: 2em;
     }
     .whycontentleft {
         margin-left: .5em;
     }
-    .playhero {
-        top: 40%;
-        left: 50%;
-    }
+
     .partydesc {
         padding: 0;
-    }
-    .menuhero {
-        top: 40%;
-        left: 50%;
     }
     .menu-content {
         padding-top: .5em;
@@ -1675,13 +1702,6 @@ hr {
     .aboutparallax {
         min-height: 80vh;
     }
-    .hero {
-        top: 50%;
-        left: 50%;
-    }
-    .menuimages {
-        display: none;
-    }
     .menucolumninner h1 {
         padding: 2em 0 0 0;
         text-align: center;
@@ -1692,6 +1712,9 @@ hr {
     .columnfooter {
         width: 100%;
         text-align: center;
+    }
+    .columnfootermap{
+        width: 100%;
     }
     .ficons {
         padding-left: 0;
@@ -1710,6 +1733,9 @@ hr {
         text-align: center;
         /* padding-left: 2.5em;*/
     }
+    .footeraddress{
+        text-align: center;
+    }
     .vertical-center {
         padding-top: 1em !important;
     }
@@ -1719,30 +1745,11 @@ hr {
     .playcolumn {
         width: 100%;
     }
-    .hero h2 {
-        margin-top: -5em;
-        font-size: 2em;
-    }
-    .pressprev {
-        margin-left: 0;
-    }
-    .pressnext {
-        margin-right: 0;
-    }
+
     .whycontentleft {
         margin-left: .5em;
     }
-    .playhero {
-        top: 40%;
-        left: 50%;
-    }
-    .playhero h1 {
-        font-size: 3em;
-    }
-    .menuhero {
-        top: 40%;
-        left: 50%;
-    }
+    
     .partydesc {
         padding: 0;
     }
@@ -1757,6 +1764,12 @@ hr {
     }
     .pool-specials {
         margin-bottom: -1em;
+    }
+    .image-box{
+        height: 150px;
+        flex-basis: 150px;
+        margin: .2em;
+        overflow: hidden;
     }
 }
 
@@ -1791,13 +1804,7 @@ hr {
         justify-content: center;
         margin-top: 1em;
     }
-    .hero h1 {
-        font-size: 3em;
-    }
-    .hero h4 {
-        font-size: 1em;
-        text-align: center justify;
-    }
+ 
     .historyleft {
         order: 2;
     }
@@ -1864,13 +1871,6 @@ hr {
     .aboutparallax {
         min-height: 80vh;
     }
-    .hero {
-        top: 50%;
-        left: 50%;
-    }
-    .menuimages {
-        display: none;
-    }
     .menucolumninner h1 {
         padding: 2em 0 0 2em;
         text-align: center;
@@ -1881,6 +1881,9 @@ hr {
     .columnfooter {
         width: 100%;
         text-align: center;
+    }
+    .columnfootermap{
+        width: 100%;
     }
     .ficons {
         padding-left: 0;
@@ -1902,35 +1905,17 @@ hr {
         text-align: center;
         /* padding-left: 3em;*/
     }
+    .footeraddress{
+        text-align: center;
+    }
     .pressarticle h4 {
         text-align: center;
     }
     .playcolumn {
         width: 100%;
-    }
-    .hero h2 {
-        margin-top: -5em;
-        font-size: 2em;
-    }
-    .pressprev {
-        margin-left: 0;
-    }
-    .pressnext {
-        margin-right: 0;
-    }
+    }  
     .whycontentleft {
         margin-left: .5em;
-    }
-    .playhero {
-        top: 40%;
-        left: 50%;
-    }
-    .playhero h1 {
-        font-size: 2.2em;
-    }
-    .menuhero {
-        top: 40%;
-        left: 50%;
     }
     .partydesc {
         padding: 0;
@@ -1960,6 +1945,9 @@ hr {
         width: 100%;
         text-align: center;
     }
+    .columnfootermap{
+        width: 100%;
+    }
     .ficons {
         padding-left: 0;
     }
@@ -1980,35 +1968,17 @@ hr {
         text-align: center;
         /* padding-left: 1.5em;*/
     }
+    .footeraddress{
+        text-align: center;
+    }
     .pressarticle h4 {
         text-align: center;
     }
     .playcolumn {
         width: 100%;
-    }
-    .hero h2 {
-        margin-top: -4.5em;
-        font-size: 2em;
-    }
-    .pressprev {
-        margin-left: 0;
-    }
-    .pressnext {
-        margin-right: 0;
-    }
+    } 
     .whycontentleft {
         margin-left: .5em;
-    }
-    .playhero {
-        top: 40%;
-        left: 50%;
-    }
-    .playhero h1 {
-        font-size: 1.8em;
-    }
-    .menuhero {
-        top: 40%;
-        left: 50%;
     }
     .partydesc {
         padding: 0;
@@ -2034,12 +2004,19 @@ hr {
     .center-content {
         opacity: 1;
     }
+    .flex-container{
+        width: 100%;
+        left: 0;
+    }
 }
 
 @media screen and (max-width: 340px) {
     .columnfooter {
         width: 100%;
         text-align: center;
+    }
+    .columnfootermap{
+        width: 100%;
     }
     .ficons {
         padding-left: 0;
@@ -2061,38 +2038,20 @@ hr {
         text-align: center;
         /* padding-left: 1.2em;*/
     }
+    .footeraddress{
+        text-align: center;
+    }
     .pressarticle h4 {
         text-align: center;
     }
     .playcolumn {
         width: 100%;
     }
-    .hero h2 {
-        margin-top: -4em;
-        font-size: 1.6em;
-    }
-    .pressprev {
-        margin-left: 0;
-    }
-    .pressnext {
-        margin-right: 0;
-    }
     .whycontentleft {
         margin-left: .5em;
     }
     .pressarticle {
         min-height: 30vh;
-    }
-    .playhero {
-        top: 40%;
-        left: 50%;
-    }
-    .playhero h1 {
-        font-size: 1.6em;
-    }
-    .menuhero {
-        top: 40%;
-        left: 50%;
     }
     .partydesc {
         padding: 0;
@@ -2112,12 +2071,16 @@ hr {
     .center-content {
         opacity: 1;
     }
+    .flex-container{
+        width: 100%;
+        left: 0;
+    }
 }
 
 
 /* Landscape */
 
-@media screen and (min-width: 530px) and (max-width: 740px) {
+@media screen and (min-width: 530px) and (max-width: 812px) {
     .surgelogo {
         top: 2% !important;
     }
