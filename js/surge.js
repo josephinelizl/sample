@@ -5,9 +5,7 @@ $(window).scroll(function() {
     } else {
         $('.navbar').removeClass('try');
     }
-}); 
-
-/* Show bottom footer and hide the static footer when srolled down at the bottom of the page */
+}); /* Show bottom footer and hide the static footer when srolled down at the bottom of the page */
 $(window).scroll(function() {
     if ($(window).scrollTop() + $(window).height() > $(document).height() - 220) {
         $('.footer1').hide();
@@ -15,70 +13,43 @@ $(window).scroll(function() {
         $('.footer1').show();
     }
 });
-
-
 $(function() {
     if ($('#mobile-number').width() > 767) {
         $('#mobile-number').attr('href', '#tm-section-4');
     } else {
         $('#mobile-number').attr('href', 'tel:1-773-961-8096');
     }
-});
-
-/* navigation links hide when click */
+}); /* navigation links hide when click */
 $(document).on('click', '#collapsingNavbar2', function(e) {
     if ($(e.target).is('a')) {
         $(this).collapse('hide');
     }
-}); 
-
-
-/* Menus button */
+}); /* Menus button */
 function changeMenu(a) {
     var dailyspecials = document.getElementById("dailyspecials");
     var coffee = document.getElementById("coffee");
     var drinks = document.getElementById("drinks");
     var food = document.getElementById("food");
-    var dailyimg = document.getElementById("dailyspecialimg");
-    var coffeeimg = document.getElementById("coffeeimg");
-    var drinksimg = document.getElementById("drinksimg");
-    var foodimg = document.getElementById("foodimg");
     if (a == 1) {
         dailyspecials.style.display = "block";
         coffee.style.display = "none";
         drinks.style.display = "none";
         food.style.display = "none";
-        dailyimg.style.display = "block";
-        coffeeimg.style.display = "none";
-        drinksimg.style.display = "none";
-        foodimg.style.display = "none";
     } else if (a == 2) {
         dailyspecials.style.display = "none";
         coffee.style.display = "block";
         drinks.style.display = "none";
         food.style.display = "none";
-        dailyimg.style.display = "none";
-        coffeeimg.style.display = "block";
-        drinksimg.style.display = "none";
-        foodimg.style.display = "none";
     } else if (a == 3) {
         dailyspecials.style.display = "none";
         coffee.style.display = "none";
         drinks.style.display = "block";
         food.style.display = "none";
-        dailyimg.style.display = "none";
-        coffeeimg.style.display = "none";
-        drinksimg.style.display = "block";
-        foodimg.style.display = "none";
     } else {
         dailyspecials.style.display = "none";
         coffee.style.display = "none";
         drinks.style.display = "none";
         food.style.display = "block";
-        dailyimg.style.display = "none";
-        coffeeimg.style.display = "none";
-        drinksimg.style.display = "none";
-        foodimg.style.display = "block";
     }
 } /* menu button changes active class*/
 $(document).ready(function() {
