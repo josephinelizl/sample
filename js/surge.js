@@ -12,12 +12,17 @@ $(window).scroll(function() {
     } else {
         $('.footer1').show();
     }
-}); /*$(function(){if ($('#mobile-number').width() > 767){$('#mobile-number').attr('href', '#tm-section-4');}else{$('#mobile-number').attr('href', 'tel:1-773-961-8096');}}); /* navigation links hide when click */
-$(window).click(function(e) {
-    if (!$(e.target).is('.navbar')) {
-        $('.collapse').collapse('hide');
-    }
+}); /*$(function(){if ($('#mobile-number').width() > 767){$('#mobile-number').attr('href', '#tm-section-4');}else{$('#mobile-number').attr('href', 'tel:1-773-961-8096');}}); */
+
+$('.navbar-toggler.ml-1').click(function(e) {
+    if ($(e.target).not('.navbar')) {
+        $('.navbar-toggler.ml-1').toggleClass("active");
+        }
+     else {
+          $('.navbar-toggler.ml-1').toggleClass("active"); 
+         }
 });
+
 
 
 /* Menus button */
@@ -112,3 +117,4 @@ $(document).ready(function() { /* Every time the window is scrolled ... */
         });
     });
 });
+

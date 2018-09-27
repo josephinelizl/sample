@@ -31,13 +31,90 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
+    
+    <style>
+        
+        .navbar-toggler.ml-1{
+    padding: .6em;
+}
+.navbar-toggler.ml-1 .icon-bar {
+  display: block;
+  margin-bottom: 4px;
+  width: 25px;
+  height: 2px;
+  background-color: #cccccc;
+  border-radius: 1px;
+}
+        .navbar-toggler.ml-1 .icon-bar:nth-of-type(2) {
+	  top: 1px;
+}
+
+.navbar-toggler.ml-1 .icon-bar:nth-of-type(3) {
+  	top: 3px;
+}
+
+.navbar-toggler.ml-1 .icon-bar {
+	  position: relative;
+	  transition: all 500ms ease-in-out;
+}
+
+.navbar-toggler.ml-1.active .icon-bar:nth-of-type(1) {
+	  top: 6px;
+	  transform: rotate(50deg);
+}
+
+.navbar-toggler.ml-1.active .icon-bar:nth-of-type(2) {
+	  background-color: transparent;
+}
+
+.navbar-toggler.ml-1.active .icon-bar:nth-of-type(3) {
+	  top: -6px;
+	  transform: rotate(-50deg);
+}
+    </style>
 </head>
 
 <body>
+      <div class="partyparallax">
+        <nav class="navbar navbar-transparent navbar-expand-md justify-content-center">
+            <a href="/" class="navbar-brand mr-0"> <img src="../../img/sample.png" alt="SURGE" width="180" height="55"></a>
+            <button class="navbar-toggler ml-1" type="button" data-toggle="collapse" data-target="#collapsingNavbar2">
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span> </button>
+            <div class="navbar-collapse collapse justify-content-center align-items-center w-100" id="collapsingNavbar2">
+                <ul class="navbar-nav mx-auto text-center text-white">
+                    <li class="nav-item"> <a class="nav-link" href="../../about.html">ABOUT</a> </li>
+                    <li class="nav-item"> <a class="nav-link" href="../../play.html">PLAY</a> </li>
+                    <li class="nav-item"> <a class="nav-link" href="../../menu.html">MENU</a> </li>
+                    <li class="nav-item"> <a class="nav-link activenavigation">PARTIES</a> </li>
+                    <li class="nav-item"> <a class="nav-link" href="../../gallery.html">GALLERY</a> </li>
+                </ul>
+                <ul class="nav navbar-nav flex-row justify-content-center flex-nowrap navcontact">
+                    <li class="nav-item"><a class="nav-link" href="#tm-section-4">CONTACT</a> </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    
         <div >
             <script src="https://apps.elfsight.com/p/platform.js" defer></script>
             <div class="elfsight-app-e79451ce-8e95-4f37-a776-f20f444a93fd"></div>
         </div>
 </body>
+ <script src="../../js/surge.js"></script>
+    <script>
+   
+        $(window).click(function(e) {
+    if ($(e.target).not('.navbar')) {
+        $('.collapse').collapse('hide');
+        $('.navbar-toggler.ml-1').toggleClass("active");
+    }
+            else {
+                 $('.navbar-toggler.ml-1').toggleClass("active"); 
+            }
+});
 
+    </script>
 </html>
+
